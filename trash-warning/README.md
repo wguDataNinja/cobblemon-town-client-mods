@@ -13,6 +13,30 @@ feature.
 
 *Before and after on Cobblemon Town.*
 
+## Install the mod JAR
+
+The current installable mod is **`trash-warning-0.1.3.jar`**. A GitHub source ZIP or a
+repository checkout is not a Minecraft mod JAR.
+
+For ordinary use, download the JAR directly from this repository's GitHub Release
+assets when a release is published. Until then, build from source:
+
+```powershell
+# Windows, from trash-warning\
+.\gradlew.bat clean build
+```
+
+```sh
+# macOS/Linux, from trash-warning/
+./gradlew clean build
+```
+
+The one file to put in the client's `mods` folder is:
+
+`build/libs/trash-warning-0.1.3.jar`
+
+Do not use a `-dev` JAR from `build/devlibs/`, and do not use a source archive.
+
 ## Why it exists
 
 Cobblemon Town's `/trash` opens as a normal-looking 9×3 inventory. That's not much
@@ -73,22 +97,18 @@ automation, network requests, telemetry, or server-side components.
 
 The mod is client-only. The server does not need it.
 
-It has been live-tested in the development Cobblemon Town environment. Testing against
-the current standard Cobblemon Town pack and a representative addon setup is also
-planned before broader compatibility is claimed.
+Version 0.1.3 has been built and live-tested with Minecraft 1.21.1, Fabric Loader
+0.18.4, Fabric API 0.116.7+1.21.1, and Cobblemon 1.7.3 in a disposable,
+baseline-aligned Cobblemon Town test clone. Broader configuration testing remains
+separate.
 
 If a future server update changes the `/trash` fingerprint, the mod fails closed and
 displays nothing.
 
-## Installation
+## Requirements
 
-Install the supported Fabric Loader and Fabric API, then place:
-
-`trash-warning-<version>.jar`
-
-in the client's `mods` folder.
-
-No configuration or server installation is required.
+Install the supported Fabric Loader and Fabric API. No configuration or server
+installation is required.
 
 ## Testing
 
@@ -104,14 +124,6 @@ Live tests have confirmed:
 
 New environments should also be checked at different GUI scales and with any installed
 UI/overlay mods.
-
-## Build from source
-
-From the `trash-warning/` directory with JDK 21 or newer:
-
-```sh
-./gradlew build
-```
 
 ## Source review
 

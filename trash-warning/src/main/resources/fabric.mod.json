@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "trash-warning",
+  "version": "${version}",
+  "name": "Trash Warning",
+  "description": "Presentation-only warning for one observed destructive generic container.",
+  "authors": ["buddy"],
+  "license": "MIT",
+  "contact": {
+    "sources": "https://github.com/wguDataNinja/cobblemon-town-client-mods"
+  },
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.cobbletown.trashwarning.TrashWarningClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "fabric-api": ">=0.116.7+1.21.1",
+    "minecraft": "~1.21.1",
+    "java": ">=21"
+  }
+}

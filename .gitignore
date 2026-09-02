@@ -1,0 +1,17 @@
+# Gradle
+.gradle/
+**/build/
+
+# IDE and operating-system files
+.idea/
+.vscode/
+*.iml
+.DS_Store
+
+# Local Minecraft/runtime files
+run/
+logs/
+crash-reports/
+saves/
+config/
+options.txt

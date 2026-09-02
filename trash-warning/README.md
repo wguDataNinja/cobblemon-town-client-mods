@@ -107,11 +107,10 @@ UI/overlay mods.
 
 ## Build from source
 
-From the `minecraft-mods` workbench root with JDK 21 or newer:
+From the `trash-warning/` directory with JDK 21 or newer:
 
 ```sh
-scripts/check-dev-environment.sh
-scripts/build-mod.sh trash-warning
+./gradlew build
 ```
 
 ## Source review

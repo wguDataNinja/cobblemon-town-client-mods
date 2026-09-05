@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "egg-badges",
+  "version": "${version}",
+  "name": "Egg Badges",
+  "description": "Configurable client-side badges for visible Pokémon Eggs.",
+  "authors": ["buddy"],
+  "license": "MIT",
+  "environment": "client",
+  "accessWidener": "egg-badges.accesswidener",
+  "entrypoints": { "client": ["com.cobbletown.eggbadges.EggBadgesClient"] },
+  "depends": { "fabricloader": ">=0.18.0", "fabric-api": "*", "minecraft": "~1.21.1", "java": ">=21" }
+}

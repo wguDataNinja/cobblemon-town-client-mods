@@ -18,8 +18,9 @@ feature.
 The current installable mod is **`trash-warning-0.1.3.jar`**. A GitHub source ZIP or a
 repository checkout is not a Minecraft mod JAR.
 
-For ordinary use, download the JAR directly from this repository's GitHub Release
-assets when a release is published. Until then, build from source:
+For ordinary use, download the JAR directly from the
+[Trash Warning 0.1.3 GitHub Release](https://github.com/wguDataNinja/cobblemon-town-client-mods/releases/tag/trash-warning-v0.1.3).
+Until then, or when developing, build from source:
 
 ```powershell
 # Windows, from trash-warning\

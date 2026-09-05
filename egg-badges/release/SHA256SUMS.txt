@@ -1,0 +1,1 @@
+1641fc6d45a9e90f0f1266995ddfd192e9cd8f6d08c3ad8f10a9cb0f2e03f2f1  egg-badges-0.2.4.jar

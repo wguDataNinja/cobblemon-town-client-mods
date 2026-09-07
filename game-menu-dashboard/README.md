@@ -3,7 +3,7 @@
 Game Menu Dashboard is an independent, unofficial client-side Fabric mod. It is not
 produced by or affiliated with Cobblemon Town, Cobblemon, or any server.
 
-Version 0.2.0 adds a compact dashboard to Minecraft's Escape / Game Menu while leaving
+Version 0.2.1 adds a compact dashboard to Minecraft's Escape / Game Menu while leaving
 all vanilla Game Menu controls unchanged.
 
 ## What it does
@@ -19,7 +19,7 @@ not automate chat input, chain commands, modify inventory, or require a server m
 
 ## Install
 
-Download `game-menu-dashboard-0.2.0.jar` from the GitHub Release and place it in the
+Download `game-menu-dashboard-0.2.1.jar` from the GitHub Release and place it in the
 Minecraft instance's `mods` folder. Remove older Dashboard versions first, then restart
 Minecraft.
 

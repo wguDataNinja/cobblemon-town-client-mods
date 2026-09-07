@@ -12,7 +12,7 @@ Cobblemon Town or Cobblemon releases.
 
 | Mod | What it does | Latest |
 | --- | --- | --- |
-| **Game Menu Dashboard** | Adds your Homes and useful Cobblemon Town server destinations directly to the Escape menu. | [**v0.2.0**](https://github.com/wguDataNinja/cobblemon-town-client-mods/releases/tag/game-menu-dashboard-v0.2.0) |
+| **Game Menu Dashboard** | Adds your Homes and useful Cobblemon Town server destinations directly to the Escape menu. | [**v0.2.1**](https://github.com/wguDataNinja/cobblemon-town-client-mods/releases/tag/game-menu-dashboard-v0.2.1) |
 | **Trash Warning** | Makes Cobblemon Town's `/trash` clearly distinguishable from a normal chest so you don't accidentally throw something away. | [**v0.1.3**](https://github.com/wguDataNinja/cobblemon-town-client-mods/releases/tag/trash-warning-v0.1.3) |
 | **Egg Badges** | Marks visible Pokémon Eggs with perfect 6×31 IVs with a small badge. | [**v0.2.4**](https://github.com/wguDataNinja/cobblemon-town-client-mods/releases/tag/egg-badges-v0.2.4) |
 

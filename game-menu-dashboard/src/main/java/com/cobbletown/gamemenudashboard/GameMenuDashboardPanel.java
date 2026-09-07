@@ -16,7 +16,6 @@ import net.minecraft.client.gui.widget.TextFieldWidget;
 import net.minecraft.client.gui.tooltip.Tooltip;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
-import net.fabricmc.loader.api.FabricLoader;
 
 import java.util.ArrayList;
 import java.util.IdentityHashMap;
@@ -25,8 +24,6 @@ import java.util.Map;
 
 /** The single-screen Homes workspace beside untouched vanilla Game Menu controls. */
 final class GameMenuDashboardPanel {
-    private static final String FOOTER = "Cobblemon-Town Game Menu Dashboard v" + FabricLoader.getInstance()
-        .getModContainer("game-menu-dashboard").map(container -> container.getMetadata().getVersion().getFriendlyString()).orElse("?") + " · by SwampDad";
     private static final String[][] WARPS = {{"Arena", "warp arena"}, {"BattleTower", "warp battletower"}, {"Crates", "warp crates"}, {"End", "warp end"}, {"Nether", "warp nether"}, {"Parkour", "warp parkour"}, {"PokeCenter", "warp pokecenter"}, {"PokeMart", "warp pokemart"}, {"TownArena", "warp townarena"}};
     private static final Map<Screen, GameMenuDashboardPanel> PANELS = new IdentityHashMap<>();
     private final Screen screen;
@@ -148,6 +145,7 @@ final class GameMenuDashboardPanel {
         HomeSnapshot snapshot = GameMenuDashboardClient.HOMES.snapshot();
         if (snapshot != null) context.drawText(text, Text.literal(snapshot.count() + " / " + snapshot.limit()), layout.x + 78, layout.y + 4, 0xFFFFFFFF, false);
         context.fill(layout.x, layout.y + 27, layout.x + layout.width, layout.y + 28, 0xFF5A6065);
+        renderFooter(context, text);
         if (snapshot == null) {
             String message = truth == HomesController.Truth.FAILED ? "Could not load Homes. Try again." : "Home data not loaded yet.";
             context.drawText(text, Text.literal(message), layout.x, layout.rowsY, 0xFFD0D0D0, false);
@@ -160,13 +158,22 @@ final class GameMenuDashboardPanel {
         if (deleteCandidate != null) context.drawText(text, Text.literal(clip(text, "Confirm delete Home " + deleteCandidate + "?", layout.width)), layout.x, layout.y + 34, 0xFFFF5555, false);
         if (layout.canShowTravel()) renderTravelLabels(context, text);
         renderRightPlaceholder(context, text);
-        context.drawText(text, Text.literal(FOOTER), layout.x, layout.bottom() - 10, 0xFFAAAAAA, false);
     }
 
     private void renderTravelLabels(DrawContext context, TextRenderer text) {
         context.fill(layout.x, layout.travelY - 32, layout.x + layout.width, layout.travelY - 31, 0xFF5A6065);
         context.drawText(text, Text.literal("SERVER TRAVEL"), layout.x, layout.travelY - 20, 0xFFFFD05B, false);
         context.drawText(text, Text.literal("──────── WARPS ────────"), layout.x, layout.travelY + 25, 0xFF9A9A9A, false);
+    }
+
+    private void renderFooter(DrawContext context, TextRenderer text) {
+        // Scale down one step so the full product name stays within the left panel.
+        context.getMatrices().push();
+        context.getMatrices().translate(layout.x, layout.bottom() - 17, 0);
+        context.getMatrices().scale(0.75F, 0.75F, 1.0F);
+        context.drawText(text, Text.literal(DashboardBranding.footerLineOne()), 0, 0, 0xFFAAAAAA, false);
+        context.drawText(text, Text.literal(DashboardBranding.footerLineTwo()), 0, 10, 0xFFAAAAAA, false);
+        context.getMatrices().pop();
     }
 
     private void renderScrollbar(DrawContext context, int count) {
@@ -217,6 +224,10 @@ final class GameMenuDashboardPanel {
             return new Layout(8, panelY, panelWidth, panelHeight, panelY + 32, 5, 22, Math.min(panelY + 176, panelY + panelHeight - 110), -1000, 0);
         }
         int bottom() { return y + height; }
-        boolean canShowTravel() { return width >= 188 && travelY + 109 <= bottom(); }
+        /**
+         * Reserve the panel's final line for the always-visible release footer.  Travel
+         * is optional at constrained scaled GUI heights; footer identity is not.
+         */
+        boolean canShowTravel() { return width >= 188 && travelY + 128 <= bottom(); }
     }
 }

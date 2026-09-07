@@ -2,13 +2,20 @@
 
 Hi, I'm **SwampDad** in-game and **WGU Data Ninja** on GitHub.
 
-I'm a Cobblemon Town player sharing unofficial client mods built specifically for
-**Cobblemon Town and its modpack**. These are independent fan projects, not official
-Cobblemon Town or Cobblemon releases.
+I'm a Cobblemon Town player sharing unofficial client-side quality-of-life mods built
+specifically for **Cobblemon Town and its modpack**. These are independent fan projects,
+not official Cobblemon Town or Cobblemon releases.
 
 **Cobblemon Town:** [Wiki](https://cobblemon-town.gitbook.io/cobblemon-town) · [CurseForge](https://www.curseforge.com/minecraft/modpacks/cobblemon-optimized-your-pokemon-journey) · [Modrinth](https://modrinth.com/modpack/cobblemon-town)
 
 ## Mods
+
+These mods make existing actions easier to find, understand, and use without automating
+gameplay or replacing server authority.
+
+**Ground rule: One deliberate human action → at most one server action.**
+
+They're built with the [Cobblemon Town Server Rules](https://cobblemon-town.gitbook.io/cobblemon-town/get-started/server-rules) in mind, especially the rules around automation and unfair advantages.
 
 | Mod | What it does | Latest |
 | --- | --- | --- |
@@ -58,6 +65,12 @@ surface while preserving the normal vanilla Game Menu. The current release provi
 Homes and Home capacity, click-to-travel Homes, Home creation/deletion/refresh, Spawn,
 RTP, and direct access to the server's fixed travel Warps. Server actions still use the
 normal commands available to the player.
+
+### Screenshot
+
+<!-- Screenshot placeholder — replace this comment with the approved in-game Game Menu
+Dashboard screenshot before the next public README push. Keep the image under
+game-menu-dashboard/docs/images/ and use descriptive alt text. -->
 
 ## Trash Warning
 

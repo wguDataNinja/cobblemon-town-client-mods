@@ -7,10 +7,11 @@ projects, not official Cobblemon Town or Cobblemon releases.
 
 | Mod | Purpose | Documentation | Latest release |
 | --- | --- | --- | --- |
+| Game Menu Dashboard | Adds an unofficial, client-side Homes and Server Travel dashboard to the Escape menu while preserving vanilla controls. | [README](game-menu-dashboard/README.md) | 0.2.0 |
 | Trash Warning | Makes `/trash` clearly distinguishable from a normal chest without changing container behavior. | [README](trash-warning/README.md) | [0.1.3](https://github.com/wguDataNinja/cobblemon-town-client-mods/releases/tag/trash-warning-v0.1.3) |
 | Egg Badges | Marks visible six-31-IV Pokémon Eggs with a small badge without changing inventory or server behavior. | [README](egg-badges/README.md) | [0.2.4](https://github.com/wguDataNinja/cobblemon-town-client-mods/releases/tag/egg-badges-v0.2.4) |
 
-More independent client-side quality-of-life mods may be added here later. Each mod
+The published mod set is Egg Badges, Trash Warning, and Game Menu Dashboard. Each mod
 keeps its own source, tests, version, release notes, and release lifecycle.
 
 ## Installation

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "game-menu-dashboard",
+  "version": "${version}",
+  "name": "Game Menu Dashboard",
+  "description": "A task-oriented Homes panel in Minecraft's Game Menu.",
+  "authors": ["buddy"],
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.cobbletown.gamemenudashboard.GameMenuDashboardClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "fabric-api": ">=0.116.7+1.21.1",
+    "minecraft": "~1.21.1",
+    "java": ">=21"
+  }
+}

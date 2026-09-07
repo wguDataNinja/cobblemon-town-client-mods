@@ -1,47 +1,101 @@
 # Cobblemon Town Client Mods
 
-Independent client-side Fabric mods for Cobblemon Town. These are community
-projects, not official Cobblemon Town or Cobblemon releases.
+Hi, I'm **SwampDad** in-game and **WGU Data Ninja** on GitHub.
+
+I'm a Cobblemon Town player sharing unofficial client mods built specifically for
+**Cobblemon Town and its modpack**. These are independent fan projects, not official
+Cobblemon Town or Cobblemon releases.
+
+**Cobblemon Town:** [Wiki](https://cobblemon-town.gitbook.io/cobblemon-town) · [CurseForge](https://www.curseforge.com/minecraft/modpacks/cobblemon-optimized-your-pokemon-journey) · [Modrinth](https://modrinth.com/modpack/cobblemon-town)
 
 ## Mods
 
-| Mod | Purpose | Documentation | Latest release |
-| --- | --- | --- | --- |
-| Game Menu Dashboard | Adds an unofficial, client-side Homes and Server Travel dashboard to the Escape menu while preserving vanilla controls. | [README](game-menu-dashboard/README.md) | [0.2.0](https://github.com/wguDataNinja/cobblemon-town-client-mods/releases/tag/game-menu-dashboard-v0.2.0) |
-| Trash Warning | Makes `/trash` clearly distinguishable from a normal chest without changing container behavior. | [README](trash-warning/README.md) | [0.1.3](https://github.com/wguDataNinja/cobblemon-town-client-mods/releases/tag/trash-warning-v0.1.3) |
-| Egg Badges | Marks visible six-31-IV Pokémon Eggs with a small badge without changing inventory or server behavior. | [README](egg-badges/README.md) | [0.2.4](https://github.com/wguDataNinja/cobblemon-town-client-mods/releases/tag/egg-badges-v0.2.4) |
+| Mod | What it does | Latest |
+| --- | --- | --- |
+| **Game Menu Dashboard** | Adds your Homes and useful Cobblemon Town server destinations directly to the Escape menu. | [**v0.2.0**](https://github.com/wguDataNinja/cobblemon-town-client-mods/releases/tag/game-menu-dashboard-v0.2.0) |
+| **Trash Warning** | Makes Cobblemon Town's `/trash` clearly distinguishable from a normal chest so you don't accidentally throw something away. | [**v0.1.3**](https://github.com/wguDataNinja/cobblemon-town-client-mods/releases/tag/trash-warning-v0.1.3) |
+| **Egg Badges** | Marks visible Pokémon Eggs with perfect 6×31 IVs with a small badge. | [**v0.2.4**](https://github.com/wguDataNinja/cobblemon-town-client-mods/releases/tag/egg-badges-v0.2.4) |
 
-The published mod set is Egg Badges, Trash Warning, and Game Menu Dashboard. Each mod
-keeps its own source, tests, version, release notes, and release lifecycle.
+Each mod is independent. Install only the ones you want.
 
 ## Installation
 
-All mods are client-only. For a supported release, download the JAR from that mod's
-GitHub Release and place it in the Minecraft instance's `mods` folder. Restart
-Minecraft after adding or replacing a JAR. Do not install development JARs, source
-ZIPs, or duplicate versions of the same mod.
+These mods are client-side only. Nothing needs to be installed on the server.
 
-The current compatibility target is Minecraft `1.21.1`, Fabric Loader `>=0.18.0`,
-Fabric API `>=0.116.7+1.21.1`, and Java `21` or newer unless a mod's README says
-otherwise. No mod requires server installation.
+1. Go to the mod's **latest GitHub Release**.
+2. Under **Assets**, download the mod's `.jar` file.
+3. Open the Minecraft instance you use for **Cobblemon Town**.
+4. Place the downloaded `.jar` in that instance's `mods` folder.
+5. Restart Minecraft.
 
-Each release includes a SHA-256 checksum. Verify it before copying a JAR to another
-computer.
+### Updating
+
+Download the new `.jar` and replace the old version in your `mods` folder. Do not leave
+multiple versions of the same mod installed at the same time.
+
+### Which file should I download?
+
+Download the normal mod `.jar` listed under **Assets** on the GitHub Release. You do
+not need source ZIPs, development JARs, or the GitHub repository itself.
+
+## Compatibility
+
+These mods are developed specifically for the **Cobblemon Town server and its modpack**.
+
+- **Minecraft:** 1.21.1
+- **Fabric Loader:** 0.18.0 or newer
+- **Fabric API:** 0.116.7+1.21.1 or newer
+- **Java:** 21 or newer
+- **Server/modpack:** Cobblemon Town
+
+The mods are client-side only and do not require server installation. Server or modpack
+changes may affect compatibility; check each mod's latest release notes after updates.
+
+## Game Menu Dashboard
+
+**Game Menu Dashboard** turns Minecraft's Escape menu into a Cobblemon Town control
+surface while preserving the normal vanilla Game Menu. The current release provides
+Homes and Home capacity, click-to-travel Homes, Home creation/deletion/refresh, Spawn,
+RTP, and direct access to the server's fixed travel Warps. Server actions still use the
+normal commands available to the player.
+
+## Trash Warning
+
+**Trash Warning** makes Cobblemon Town's `/trash` inventory visually unmistakable from
+ordinary storage, reducing the chance of accidental deletion. It does not change the
+server's Trash behavior.
+
+## Egg Badges
+
+**Egg Badges** adds a small visual marker to visible Pokémon Eggs with perfect six-stat
+31 IVs. It does not modify Pokémon, Eggs, inventories, breeding mechanics, or server
+state.
+
+## Scope
+
+These are small client-side quality-of-life mods. They do not require server
+installation, grant extra permissions, or replace server authority. Any ordinary server
+action still goes through the normal command or interaction available to the player.
+
+## Checksums
+
+Published releases include a SHA-256 checksum for the release JAR. Most players do not
+need it; it is provided for independent verification of a downloaded or copied JAR.
 
 ## Development
 
-Each project can be built independently from its directory:
+Each published mod maintains its own source, tests, version, release notes, and release
+lifecycle.
 
-```sh
+```bash
 cd trash-warning && ./gradlew test build
 cd ../egg-badges && ./gradlew test build
+cd ../game-menu-dashboard && ./gradlew test build
 ```
 
-Only remapped runtime JARs from `build/libs/` should be released. Project-specific
-documentation is the authoritative source for behavior, compatibility, limitations,
-and safety guarantees.
+Only remapped runtime JARs from `build/libs/` are intended for release.
 
 ## License
 
 Unless a project directory states otherwise, these mods are distributed under the
-repository's [MIT License](LICENSE).
+repository's MIT License.

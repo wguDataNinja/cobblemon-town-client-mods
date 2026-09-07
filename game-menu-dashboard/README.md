@@ -6,6 +6,10 @@ produced by or affiliated with Cobblemon Town, Cobblemon, or any server.
 Version 0.2.1 adds a compact dashboard to Minecraft's Escape / Game Menu while leaving
 all vanilla Game Menu controls unchanged.
 
+![Game Menu Dashboard in Minecraft's Escape menu, with Homes and Server Travel on the left, vanilla Game Menu controls in the center, and future Claims/GTS territory on the right.](docs/images/game-menu-dashboard-v0.2.1.png)
+
+*Game Menu Dashboard v0.2.1 on Cobblemon Town.*
+
 ## What it does
 
 - Shows Homes in a five-row scrollable viewport with click-to-travel, a small reload

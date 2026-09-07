@@ -68,9 +68,9 @@ normal commands available to the player.
 
 ### Screenshot
 
-<!-- Screenshot placeholder — replace this comment with the approved in-game Game Menu
-Dashboard screenshot before the next public README push. Keep the image under
-game-menu-dashboard/docs/images/ and use descriptive alt text. -->
+![Game Menu Dashboard in Minecraft's Escape menu, with Homes and Server Travel on the left, vanilla Game Menu controls in the center, and future Claims/GTS territory on the right.](game-menu-dashboard/docs/images/game-menu-dashboard-v0.2.1.png)
+
+*Game Menu Dashboard v0.2.1 on Cobblemon Town.*
 
 ## Trash Warning
 

@@ -21,6 +21,11 @@ public final class DashboardBranding {
         return "by " + AUTHOR;
     }
 
+    /** Temporary, conspicuous verification marker for private development installs. */
+    public static String developmentBuildMarker() {
+        return "DEV BUILD " + version() + " · HERE IN LIST";
+    }
+
     private static String version() {
         String version = FabricLoader.getInstance().getModContainer(MOD_ID)
             .map(container -> container.getMetadata().getVersion().getFriendlyString())

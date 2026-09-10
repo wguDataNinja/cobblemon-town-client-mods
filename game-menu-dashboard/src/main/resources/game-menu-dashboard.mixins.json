@@ -1,0 +1,7 @@
+{
+  "required": false,
+  "package": "com.cobbletown.gamemenudashboard.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": ["GuiMapAccessor", "GuiMapClaimsMixin", "MinimapOverMapRendererAccessor"],
+  "injectors": {"defaultRequire": 0}
+}

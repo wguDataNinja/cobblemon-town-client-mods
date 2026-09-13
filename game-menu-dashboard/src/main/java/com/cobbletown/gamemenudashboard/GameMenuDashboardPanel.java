@@ -118,9 +118,13 @@ final class GameMenuDashboardPanel {
     }
 
     private void addHomeRow(String name, int y) {
-        add(button(Text.literal(name), button -> GameMenuDashboardClient.HOMES.go(name), layout.x, y,
+        boolean confirmingDelete = name.equals(deleteCandidate);
+        Text rowLabel = Text.literal(confirmingDelete ? "Confirm delete " + name + "?" : name);
+        add(button(rowLabel, button -> {
+            if (!confirmingDelete) GameMenuDashboardClient.HOMES.go(name);
+        }, layout.x, y,
             layout.width - layout.deleteWidth - 4, layout.homeButtonHeight));
-        ButtonWidget deleteButton = name.equals(deleteCandidate)
+        ButtonWidget deleteButton = confirmingDelete
             ? new DangerButton(layout.screenX(layout.x + layout.width - layout.deleteWidth), layout.screenY(y), layout.screenSize(layout.deleteWidth), layout.screenSize(layout.homeButtonHeight), Text.literal("X"), button -> {
                 GameMenuDashboardClient.HOMES.delete(name); deleteCandidate = null; rebuild();
             }, layout.scale)
@@ -257,8 +261,10 @@ final class GameMenuDashboardPanel {
             boundary.setTooltip(Tooltip.of(Text.literal("Show known Claim boundaries in the world")));
             add(boundary);
             add(rightButton(Text.literal("Trust"), button -> { rightTab = RightTab.TRUST; claimWorkspace = ClaimWorkspace.NONE; rebuild(); }, 0, layout.y + 222, 92, 18));
-            add(rightButton(Text.literal("Resize Claim"), button -> openWorkspace(ClaimWorkspace.RESIZE), 96, layout.y + 222, 94, 18));
-            addResizeWorkspaceControls();
+            if (!layout.owned) {
+                add(rightButton(Text.literal("Resize Claim"), button -> openWorkspace(ClaimWorkspace.RESIZE), 96, layout.y + 222, 94, 18));
+                addResizeWorkspaceControls();
+            }
         }
     }
 
@@ -419,7 +425,6 @@ final class GameMenuDashboardPanel {
             return;
         }
         if (snapshot.names().size() > layout.rows) renderScrollbar(context, snapshot.names().size());
-        if (deleteCandidate != null) context.drawText(text, Text.literal(clip(text, "Confirm delete Home " + deleteCandidate + "?", layout.width)), layout.x, layout.y + 34, 0xFFFF5555, false);
         if (layout.canShowTravel()) renderTravelLabels(context, text);
     }
 

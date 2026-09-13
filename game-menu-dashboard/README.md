@@ -21,6 +21,10 @@ and provides a compact **Swamp Menu** launcher. It opens a Swamp-owned dashboard
 and returns to the original Game Menu with Back or Esc. The normal inline dashboard is
 used when those Essential controls are not present.
 
+Resize Claim is unavailable from the Swamp Menu fallback because its experimental
+workspace needs the normal Game Menu's lower free area. This avoids covering the
+Dashboard controls.
+
 The dashboard sends at most one ordinary server command per deliberate interaction. It
 does not automate chat input, chain commands, modify inventory, or require a server mod.
 

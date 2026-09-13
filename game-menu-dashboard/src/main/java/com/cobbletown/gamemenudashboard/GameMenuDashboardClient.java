@@ -52,7 +52,13 @@ public final class GameMenuDashboardClient implements ClientModInitializer {
             if (current != null) GameMenuDashboardPanel.tick(current);
         });
         ScreenEvents.AFTER_INIT.register((client, screen, width, height) -> {
-            if (screen instanceof GameMenuScreen) GameMenuDashboardPanel.attach(screen, width, height);
+            if (screen instanceof GameMenuScreen) {
+                if (PauseMenuFallback.route(EssentialPauseMenuConflict.isPresent(screen)) == PauseMenuFallback.Route.SWAMP_MENU_LAUNCHER) {
+                    SwampMenuLauncher.attach(screen, width, height);
+                } else {
+                    GameMenuDashboardPanel.attachInline(screen, width, height);
+                }
+            }
         });
     }
 }

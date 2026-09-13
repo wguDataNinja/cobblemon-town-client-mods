@@ -1,2 +1,2 @@
 34f4985d0848188cbe083d39755143c1db48e607d42a46a1101b9eaa084a79ec  game-menu-dashboard-0.2.1.jar
-f006bdffe1cbd573358b81abc77eaf560c0a2ae33c041a386a764eed0d583f40  game-menu-dashboard-0.2.3-dev.jar
+aacf8d8c1f91b6dc410b7d2c29746c026235e2b8b1b4fe14b72bbfdd7a71a09a  game-menu-dashboard-0.2.3-dev.jar

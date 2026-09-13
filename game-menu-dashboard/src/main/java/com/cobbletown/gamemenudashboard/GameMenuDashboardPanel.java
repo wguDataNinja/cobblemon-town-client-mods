@@ -57,10 +57,18 @@ final class GameMenuDashboardPanel {
         this.resizeDirection = ResizePreview.direction(); this.resizeAmount = ResizePreview.amount();
     }
 
-    static void attach(Screen screen, int width, int height) {
+    static void attachInline(Screen screen, int width, int height) {
+        attach(screen, Layout.forInlineScreen(width, height));
+    }
+
+    static void attachOwned(Screen screen, int width, int height) {
+        attach(screen, Layout.forOwnedScreen(width, height));
+    }
+
+    private static void attach(Screen screen, Layout layout) {
         GameMenuDashboardPanel prior = PANELS.remove(screen);
         if (prior != null) prior.removeWidgets();
-        GameMenuDashboardPanel panel = new GameMenuDashboardPanel(screen, Layout.forScreen(width, height));
+        GameMenuDashboardPanel panel = new GameMenuDashboardPanel(screen, layout);
         if (!panel.layout.hasRoom()) return;
         PANELS.put(screen, panel);
         panel.rebuild();
@@ -588,6 +596,15 @@ final class GameMenuDashboardPanel {
 
     /** Positioned from vanilla's actual Disconnect button, not a guessed menu row. */
     private WorkspaceLayout workspaceLayout() {
+        if (layout.owned) {
+            int logicalWidth = Math.min(260, Math.round((layout.screenWidth - 16) / layout.scale));
+            int logicalHeight = Math.min(218, Math.round((layout.screenHeight - 40) / layout.scale));
+            if (logicalWidth < 160 || logicalHeight < 76) return null;
+            int screenWidth = layout.screenSize(logicalWidth);
+            int screenHeight = layout.screenHeight(logicalHeight);
+            return new WorkspaceLayout((layout.screenWidth - screenWidth) / 2,
+                Math.max(30, (layout.screenHeight - screenHeight) / 2), logicalWidth, logicalHeight);
+        }
         int disconnectBottom = Screens.getButtons(screen).stream()
             .filter(widget -> widget.getMessage().getString().equalsIgnoreCase("Disconnect"))
             .mapToInt(widget -> widget.getY() + widget.getHeight())
@@ -702,14 +719,14 @@ final class GameMenuDashboardPanel {
     private record Layout(int x, int y, int width, int height, int rowsY, int rows, int rowHeight,
                           int homeButtonHeight, int deleteWidth, int reloadSize, int travelY, int warpsY,
                           int travelColumns, int travelButtonWidth, int travelButtonHeight, int travelRowStep,
-                          int travelGap, int rightX, int screenWidth, int screenHeight, float scale) {
+                          int travelGap, int rightX, int screenWidth, int screenHeight, float scale, boolean owned) {
         private static final int CANONICAL_WIDTH = 190;
         private static final int CANONICAL_HEIGHT = 302;
         private static final float MIN_INTERACTIVE_SCALE = 0.40F;
         private static final int OUTER_MARGIN = 8;
         private static final int GUTTER_BREATHING_ROOM = 24;
 
-        static Layout forScreen(int width, int height) {
+        static Layout forInlineScreen(int width, int height) {
             int centerLeft = width / 2 - 102;
             int originX = OUTER_MARGIN;
             int leftGutter = Math.max(0, centerLeft - OUTER_MARGIN - GUTTER_BREATHING_ROOM);
@@ -725,7 +742,14 @@ final class GameMenuDashboardPanel {
             int originY = Math.max(OUTER_MARGIN, Math.round((height - CANONICAL_HEIGHT * Math.max(0.0F, scale)) / 2.0F));
             return new Layout(originX, originY, CANONICAL_WIDTH, CANONICAL_HEIGHT, originY + 32, 5, 22,
                 20, 22, 20, originY + 176, originY + 219, 3, 60, 18, 22, 4,
-                width - OUTER_MARGIN - Math.round(CANONICAL_WIDTH * scale), width, height, scale);
+                width - OUTER_MARGIN - Math.round(CANONICAL_WIDTH * scale), width, height, scale, false);
+        }
+        static Layout forOwnedScreen(int width, int height) {
+            DashboardScreenLayout.Placement placement = DashboardScreenLayout.forScreen(width, height);
+            float scale = placement.scale();
+            return new Layout(placement.leftX(), placement.topY(), CANONICAL_WIDTH, CANONICAL_HEIGHT,
+                placement.topY() + 32, 5, 22, 20, 22, 20, placement.topY() + 176,
+                placement.topY() + 219, 3, 60, 18, 22, 4, placement.rightX(), width, height, scale, true);
         }
         int bottom() { return y + height; }
         boolean hasRoom() { return scale >= MIN_INTERACTIVE_SCALE; }

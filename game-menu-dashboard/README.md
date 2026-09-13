@@ -16,6 +16,11 @@ Xaero map overlays. Claims, Trust, resize preview, and map behavior still need m
 validation on the current official modpack. Do not treat the Claims display as server
 truth or use it for irreversible actions.
 
+When Essential has mounted its pause-menu controls, the dashboard avoids that layout
+and provides a compact **Swamp Menu** launcher. It opens a Swamp-owned dashboard screen
+and returns to the original Game Menu with Back or Esc. The normal inline dashboard is
+used when those Essential controls are not present.
+
 The dashboard sends at most one ordinary server command per deliberate interaction. It
 does not automate chat input, chain commands, modify inventory, or require a server mod.
 

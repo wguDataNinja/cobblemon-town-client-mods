@@ -5,16 +5,16 @@ task-oriented panel to Minecraft's Escape / Game Menu while leaving vanilla cont
 available. It is not produced by or affiliated with Cobblemon Town, Cobblemon, or any
 server.
 
-## Testing snapshot — 0.2.3-dev.19
+## Tester build — 0.2.3-dev
 
-This source snapshot is published for controlled testing, **not as a GitHub Release**.
-The latest supported player download remains the [v0.2.1 release](../README.md).
+This build is published for controlled tester sharing, **not as a GitHub Release**.
+Download the normal runtime JAR from [`release/`](release/); do not use a development
+JAR or source ZIP.
 
-The snapshot includes Homes and Server Travel plus an experimental own-Claims/Trust
-panel and optional Xaero map overlays. Claims, Trust, resize preview, and map behavior
-are incomplete and require manual validation on the current official modpack. Do not
-rely on the testing snapshot for irreversible actions or treat its Claims display as
-server truth.
+It includes Homes and Server Travel plus the current Claims/Trust panel and optional
+Xaero map overlays. Claims, Trust, resize preview, and map behavior still need manual
+validation on the current official modpack. Do not treat the Claims display as server
+truth or use it for irreversible actions.
 
 The dashboard sends at most one ordinary server command per deliberate interaction. It
 does not automate chat input, chain commands, modify inventory, or require a server mod.
@@ -26,7 +26,7 @@ does not automate chat input, chain commands, modify inventory, or require a ser
 ```
 
 Use Java 21 or newer. Only the remapped runtime JAR in `build/libs/` is usable in
-Minecraft; no JAR has been published for this testing snapshot.
+Minecraft.
 
 Compatibility target: Minecraft 1.21.1, Fabric Loader >= 0.18.0, and Fabric API
 >= 0.116.7+1.21.1.

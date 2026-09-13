@@ -1,6 +1,5 @@
 package com.cobbletown.gamemenudashboard;
 
-import com.cobbletown.gamemenudashboard.claims.ClaimsStyleComparisonHarness;
 import com.cobbletown.gamemenudashboard.claims.ClaimsDisplaySettings;
 import com.cobbletown.gamemenudashboard.claims.ClaimsController;
 import com.cobbletown.gamemenudashboard.claims.ClaimsWorldRenderer;
@@ -19,8 +18,6 @@ import net.minecraft.client.gui.screen.Screen;
 public final class GameMenuDashboardClient implements ClientModInitializer {
     public static final HomesController HOMES = new HomesController();
     public static final HomeNotesStore NOTES = new HomeNotesStore();
-    /** Private, disposable visual-comparison control; it has no server data path. */
-    public static final ClaimsStyleComparisonHarness CLAIMS_STYLE_LAB = new ClaimsStyleComparisonHarness();
     /** Local-only, opt-in Claims display preferences. Both begin disabled. */
     public static final ClaimsDisplaySettings CLAIMS_DISPLAY = new ClaimsDisplaySettings();
     public static final ClaimsController CLAIMS = new ClaimsController();
@@ -30,7 +27,6 @@ public final class GameMenuDashboardClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        CLAIMS_STYLE_LAB.register();
         CLAIMS_WORLD_RENDERER.register();
         CLAIMS_DISPLAY.load();
         CLAIMS.restore();
@@ -45,7 +41,6 @@ public final class GameMenuDashboardClient implements ClientModInitializer {
             }
         });
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
-            CLAIMS_STYLE_LAB.tick(client);
             CLAIMS.tick();
             CLAIMS_MINIMAP_RENDERER.tick();
             HOMES.tick();

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "pc-exporter",
+  "version": "${version}",
+  "name": "PC Exporter",
+  "description": "Client-only, read-only Cobblemon PC exporter. Adds an Export PC button beside PC Plus's native filter controls and writes a private, timestamped JSON snapshot of the client-resident PC.",
+  "authors": ["buddy"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.cobbletown.pcexporter.PcExporterMod"]
+  },
+  "mixins": ["pcexporter.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "cobblemon": ">=1.7.0",
+    "cobblemonpcplus": ">=1.3.0"
+  }
+}

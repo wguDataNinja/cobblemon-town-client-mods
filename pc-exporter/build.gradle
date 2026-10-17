@@ -1,0 +1,51 @@
+plugins {
+    id 'fabric-loom' version '1.11.8'
+}
+
+version = project.mod_version
+group = project.maven_group
+
+base {
+    archivesName = project.archives_base_name
+}
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://api.modrinth.com/maven' }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    modCompileOnly "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    // Cobblemon 1.8.1+1.21.1 (Modrinth version id). Compile-only; never bundled.
+    modCompileOnly 'maven.modrinth:cobblemon:gBW3vLC7'
+    // Cobblemon PC Plus 1.3.0+1.21.1 (Modrinth version id) for the native Export control.
+    // All Rights Reserved; compile-only, never bundled or redistributed.
+    modCompileOnly 'maven.modrinth:cobblemon-pc-plus:TUu8PFNm'
+    // Cobblemon is Kotlin; its classes implement Kotlin markers. Runtime is provided by
+    // the installed fabric-language-kotlin; compile-only here.
+    compileOnly 'org.jetbrains.kotlin:kotlin-stdlib:2.0.21'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.2'
+}
+
+processResources {
+    inputs.property 'version', project.version
+    filesMatching('fabric.mod.json') {
+        expand version: project.version
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.release = 21
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+tasks.withType(Test).configureEach {
+    useJUnitPlatform()
+}

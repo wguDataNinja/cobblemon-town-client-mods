@@ -3,7 +3,6 @@ package com.cobbletown.pcexporter.ui;
 import com.cobblemon.mod.common.client.gui.pc.PCGUI;
 import com.cobblemon.pc_plus.client.filter.FilterController;
 import com.cobblemon.pc_plus.client.filter.PanelButtonWidget;
-import com.cobbletown.pcexporter.snapshot.PcSnapshotService;
 import kotlin.Unit;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.text.Text;
@@ -65,7 +64,7 @@ public final class ExportPcOverlay {
                 0, 0, WIDTH, 10,
                 () -> Text.literal("Export"),
                 () -> {
-                    ExportFeedback.report(PcSnapshotService.export(pcGui.getPc()));
+                    ExportController.onExport(pcGui);
                     return Unit.INSTANCE;
                 },
                 () -> Boolean.FALSE,

@@ -12,7 +12,8 @@
   },
   "mixins": ["pcexporter.mixins.json"],
   "depends": {
-    "fabricloader": ">=0.16.0",
+    "fabricloader": ">=0.18.0",
+    "fabric-api": ">=0.116.7+1.21.1",
     "minecraft": "~1.21.1",
     "java": ">=21",
     "cobblemon": ">=1.7.0",

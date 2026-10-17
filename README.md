@@ -22,7 +22,7 @@ They're built with the [Cobblemon Town Server Rules](https://cobblemon-town.gitb
 | **Game Menu Dashboard** | Adds your Homes and useful Cobblemon Town server destinations directly to the Escape menu. | [**0.2.3-dev tester build**](game-menu-dashboard/release/) · [v0.2.1 GitHub Release](https://github.com/wguDataNinja/cobblemon-town-client-mods/releases/tag/game-menu-dashboard-v0.2.1) |
 | **Trash Warning** | Makes Cobblemon Town's `/trash` clearly distinguishable from a normal chest so you don't accidentally throw something away. | [**v0.1.3**](https://github.com/wguDataNinja/cobblemon-town-client-mods/releases/tag/trash-warning-v0.1.3) |
 | **Egg Badges** | Marks visible Pokémon Eggs with perfect 6×31 IVs with a small badge. | [**v0.2.4**](https://github.com/wguDataNinja/cobblemon-town-client-mods/releases/tag/egg-badges-v0.2.4) |
-| **PC Exporter** | Exports a read-only JSON snapshot of your Cobblemon PC from a button inside the PC screen, for breeding/team analysis. | [**v0.2.0**](https://github.com/wguDataNinja/cobblemon-town-client-mods/releases/tag/pc-exporter-v0.2.0) |
+| **PC Exporter** | Exports a read-only JSON snapshot of your Cobblemon PC from a button inside the PC screen, for breeding/team analysis. | [**v0.3.0**](https://github.com/wguDataNinja/cobblemon-town-client-mods/releases/tag/pc-exporter-v0.3.0) |
 
 Each mod is independent. Install only the ones you want.
 

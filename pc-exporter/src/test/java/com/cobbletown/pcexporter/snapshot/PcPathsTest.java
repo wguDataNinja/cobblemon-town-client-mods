@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.nio.file.Path;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 class PcPathsTest {
 
@@ -34,5 +35,18 @@ class PcPathsTest {
     void trailingWhitespaceIsTrimmed() {
         assertEquals(Path.of("/work/exports"),
                 PcPaths.resolveOutputDir(DEFAULT, GAME, "  /work/exports\n"));
+    }
+
+    @Test
+    void configuredDirIsNullWhenUnset() {
+        assertNull(PcPaths.resolveConfiguredDir(GAME, null));
+        assertNull(PcPaths.resolveConfiguredDir(GAME, "   "));
+        assertNull(PcPaths.resolveConfiguredDir(GAME, "\n"));
+    }
+
+    @Test
+    void configuredDirResolvesAbsoluteAndRelative() {
+        assertEquals(Path.of("/work/exports"), PcPaths.resolveConfiguredDir(GAME, "/work/exports"));
+        assertEquals(Path.of("/game/exports"), PcPaths.resolveConfiguredDir(GAME, "  exports\n"));
     }
 }

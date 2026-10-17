@@ -5,6 +5,7 @@ import com.cobblemon.mod.common.client.storage.ClientPC;
 import com.cobblemon.mod.common.pokemon.Pokemon;
 
 import java.io.IOException;
+import java.nio.file.AccessDeniedException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
@@ -14,8 +15,8 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
- * Read-only snapshot service: traverses every occupied box/slot of the client-resident PC
- * and writes one private timestamped JSON file. No mutation, no networking.
+ * Read-only snapshot service: traverses every occupied box/slot of the client-resident PC and
+ * writes one private timestamped JSON file. No mutation, no networking.
  */
 public final class PcSnapshotService {
     private static final AtomicBoolean EXPORTING = new AtomicBoolean(false);
@@ -23,14 +24,30 @@ public final class PcSnapshotService {
     private PcSnapshotService() {
     }
 
+    /** Writes to the resolved directory (configured, else default). */
     public static ExportResult export(ClientPC pc) {
+        return export(pc, PcPaths.snapshotsDir());
+    }
+
+    /** Writes one snapshot into {@code dir}. */
+    public static ExportResult export(ClientPC pc, Path dir) {
         if (pc == null) {
             return ExportResult.unavailable("no synchronized PC state is available");
+        }
+        if (dir == null) {
+            return ExportResult.error("no export folder is configured");
         }
         if (!EXPORTING.compareAndSet(false, true)) {
             return ExportResult.busy();
         }
         try {
+            if (Files.exists(dir) && !Files.isDirectory(dir)) {
+                return ExportResult.error("the export path is not a folder: " + dir);
+            }
+            if (Files.isDirectory(dir) && !Files.isWritable(dir)) {
+                return ExportResult.error("the export folder is not writable: " + dir);
+            }
+
             List<ClientBox> boxes = pc.getBoxes();
             if (boxes == null || boxes.isEmpty()) {
                 return ExportResult.unavailable("the PC has no synchronized boxes yet");
@@ -77,11 +94,13 @@ public final class PcSnapshotService {
             // traversed the complete synchronized store; we assert no stronger guarantee.
             snapshot.completeness = "complete-synchronized-store";
 
-            Path out = PcPaths.nextSnapshotPath();
+            Path out = dir.resolve(PcPaths.snapshotFileName());
             Files.createDirectories(out.getParent());
             Files.writeString(out, SnapshotJson.toJson(snapshot),
                     StandardOpenOption.CREATE_NEW, StandardOpenOption.WRITE);
             return ExportResult.success(snapshot.entries.size(), out.toString());
+        } catch (AccessDeniedException denied) {
+            return ExportResult.error("the export folder is not writable: " + dir);
         } catch (IOException io) {
             return ExportResult.error("could not write snapshot: " + io.getMessage());
         } catch (RuntimeException runtime) {

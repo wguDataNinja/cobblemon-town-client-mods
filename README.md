@@ -23,7 +23,7 @@ They're built with the [Cobblemon Town Server Rules](https://cobblemon-town.gitb
 | **Trash Warning** | Makes Cobblemon Town's `/trash` clearly distinguishable from a normal chest so you don't accidentally throw something away. | [**v0.1.3**](https://github.com/wguDataNinja/cobblemon-town-client-mods/releases/tag/trash-warning-v0.1.3) |
 | **Egg Badges** | Marks visible Pokémon Eggs with perfect 6×31 IVs with a small badge. | [Source and v0.2.4 release](https://github.com/SwampDad/egg-badges) |
 | **PC Exporter** | Exports a read-only JSON snapshot of your Cobblemon PC from a button inside the PC screen, for breeding/team analysis. | [Source and v0.3.0 release](https://github.com/SwampDad/pc-exporter) |
-| **Collection Exporter** | Creates a readable, copyable report of your Cobblemon PC collection, including Custom Skins, Legendary & Mythical, Shiny, and unresolved aspects. | [**0.3.0-dev.1 tester build**](https://github.com/wguDataNinja/cobblemon-town-client-mods/releases/tag/collection-exporter-v0.3.0-dev.1) |
+| **Collection Exporter** | Creates a readable, copyable report of your Cobblemon PC collection, including Custom Skins, Legendary & Mythical, Shiny, and unresolved aspects. | [Source and 0.3.0-dev.1 tester release](https://github.com/SwampDad/collection-exporter) |
 
 Each mod is independent. Install only the ones you want.
 
@@ -104,6 +104,8 @@ Its source and releases now live at [SwampDad/pc-exporter](https://github.com/Sw
 collection report you can copy to the clipboard. It groups Custom Skins by official family,
 splits Legendary & Mythical, preserves Shiny status, and names unresolved aspects instead of
 hiding them. It is read-only and does not require PC Plus or PC Exporter.
+
+Its source and releases now live at [SwampDad/collection-exporter](https://github.com/SwampDad/collection-exporter).
 
 ## Scope
 

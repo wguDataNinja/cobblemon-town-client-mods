@@ -21,8 +21,8 @@ They're built with the [Cobblemon Town Server Rules](https://cobblemon-town.gitb
 | --- | --- | --- |
 | **Game Menu Dashboard** | Adds your Homes and useful Cobblemon Town server destinations directly to the Escape menu. | [**0.2.3-dev tester build**](game-menu-dashboard/release/) · [v0.2.1 GitHub Release](https://github.com/wguDataNinja/cobblemon-town-client-mods/releases/tag/game-menu-dashboard-v0.2.1) |
 | **Trash Warning** | Makes Cobblemon Town's `/trash` clearly distinguishable from a normal chest so you don't accidentally throw something away. | [**v0.1.3**](https://github.com/wguDataNinja/cobblemon-town-client-mods/releases/tag/trash-warning-v0.1.3) |
-| **Egg Badges** | Marks visible Pokémon Eggs with perfect 6×31 IVs with a small badge. | [**v0.2.4**](https://github.com/wguDataNinja/cobblemon-town-client-mods/releases/tag/egg-badges-v0.2.4) |
-| **PC Exporter** | Exports a read-only JSON snapshot of your Cobblemon PC from a button inside the PC screen, for breeding/team analysis. | [**v0.3.0**](https://github.com/wguDataNinja/cobblemon-town-client-mods/releases/tag/pc-exporter-v0.3.0) |
+| **Egg Badges** | Marks visible Pokémon Eggs with perfect 6×31 IVs with a small badge. | [Source and v0.2.4 release](https://github.com/SwampDad/egg-badges) |
+| **PC Exporter** | Exports a read-only JSON snapshot of your Cobblemon PC from a button inside the PC screen, for breeding/team analysis. | [Source and v0.3.0 release](https://github.com/SwampDad/pc-exporter) |
 | **Collection Exporter** | Creates a readable, copyable report of your Cobblemon PC collection, including Custom Skins, Legendary & Mythical, Shiny, and unresolved aspects. | [**0.3.0-dev.1 tester build**](https://github.com/wguDataNinja/cobblemon-town-client-mods/releases/tag/collection-exporter-v0.3.0-dev.1) |
 
 Each mod is independent. Install only the ones you want.
@@ -84,7 +84,7 @@ server's Trash behavior.
 
 **Egg Badges** adds a small visual marker to visible Pokémon Eggs with perfect six-stat
 31 IVs. It does not modify Pokémon, Eggs, inventories, breeding mechanics, or server
-state.
+state. Its source and releases now live at [SwampDad/egg-badges](https://github.com/SwampDad/egg-badges).
 
 ## PC Exporter
 
@@ -95,6 +95,8 @@ inventory mutation. The snapshot stays local to your instance.
 
 **PC Exporter requires Cobblemon PC Plus.** The button is placed inside the PC Plus
 interface; install Cobblemon and Cobblemon PC Plus first.
+
+Its source and releases now live at [SwampDad/pc-exporter](https://github.com/SwampDad/pc-exporter).
 
 ## Collection Exporter
 
@@ -121,9 +123,7 @@ lifecycle.
 
 ```bash
 cd trash-warning && ./gradlew test build
-cd ../egg-badges && ./gradlew test build
 cd ../game-menu-dashboard && ./gradlew test build
-cd ../pc-exporter && ./gradlew test build
 cd ../collection-exporter && ./gradlew test build
 ```
 

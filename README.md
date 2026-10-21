@@ -23,6 +23,7 @@ They're built with the [Cobblemon Town Server Rules](https://cobblemon-town.gitb
 | **Trash Warning** | Makes Cobblemon Town's `/trash` clearly distinguishable from a normal chest so you don't accidentally throw something away. | [**v0.1.3**](https://github.com/wguDataNinja/cobblemon-town-client-mods/releases/tag/trash-warning-v0.1.3) |
 | **Egg Badges** | Marks visible Pokémon Eggs with perfect 6×31 IVs with a small badge. | [**v0.2.4**](https://github.com/wguDataNinja/cobblemon-town-client-mods/releases/tag/egg-badges-v0.2.4) |
 | **PC Exporter** | Exports a read-only JSON snapshot of your Cobblemon PC from a button inside the PC screen, for breeding/team analysis. | [**v0.3.0**](https://github.com/wguDataNinja/cobblemon-town-client-mods/releases/tag/pc-exporter-v0.3.0) |
+| **Collection Exporter** | Creates a readable, copyable report of your Cobblemon PC collection, including Custom Skins, Legendary & Mythical, Shiny, and unresolved aspects. | [**0.3.0-dev.1 tester build**](https://github.com/wguDataNinja/cobblemon-town-client-mods/releases/tag/collection-exporter-v0.3.0-dev.1) |
 
 Each mod is independent. Install only the ones you want.
 
@@ -95,6 +96,13 @@ inventory mutation. The snapshot stays local to your instance.
 **PC Exporter requires Cobblemon PC Plus.** The button is placed inside the PC Plus
 interface; install Cobblemon and Cobblemon PC Plus first.
 
+## Collection Exporter
+
+**Collection Exporter** reads your client-synchronized Cobblemon PC and produces a readable
+collection report you can copy to the clipboard. It groups Custom Skins by official family,
+splits Legendary & Mythical, preserves Shiny status, and names unresolved aspects instead of
+hiding them. It is read-only and does not require PC Plus or PC Exporter.
+
 ## Scope
 
 These are small client-side quality-of-life mods. They do not require server
@@ -116,6 +124,7 @@ cd trash-warning && ./gradlew test build
 cd ../egg-badges && ./gradlew test build
 cd ../game-menu-dashboard && ./gradlew test build
 cd ../pc-exporter && ./gradlew test build
+cd ../collection-exporter && ./gradlew test build
 ```
 
 Only remapped runtime JARs from `build/libs/` are intended for release.

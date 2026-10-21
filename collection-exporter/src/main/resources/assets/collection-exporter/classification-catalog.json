@@ -1,0 +1,2538 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-21T00:30:00.888334+00:00",
+  "provenance": {
+    "generatedAt": "2026-10-21T00:30:00.888795+00:00",
+    "cobblemonJar": "Cobblemon-fabric-1.8.2+1.21.1.jar",
+    "cobblemonJarSha256": "cae8ac328b61354fbe415208b8c6ffc12e7155094d0a87082e85e7914fb380c2",
+    "speciesDataGlob": "data/cobblemon/species/**/*.json",
+    "skinRegistry": {
+      "path": "reviewed Cobblemon Town skin registry (not bundled)",
+      "sha256": "cc9247272f9197549fe3af264a233f3b8e3c29069fb6ed5ccb4c663c5aa02cfb",
+      "schemaVersion": "2.1.0",
+      "generatedAt": "2026-10-19T23:43:21+00:00"
+    },
+    "ownerCorrections": [
+      "easter2026 is a confirmed Easter skin identity.",
+      "radiation is not a skin.",
+      "archelian is a form, not a skin.",
+      "alatian is a form, not a skin.",
+      "tron2026 is the runtime aspect for the official Neon collection; Tron is an alias.",
+      "Mega, alpha, gmax, and other gameplay/form aspects are not automatically skins.",
+      "Unknown aspects are not automatically skins."
+    ],
+    "snapshot": {
+      "path": "historical PC Exporter snapshot (not bundled)",
+      "sha256": "dcdf7a20daefc9330aa396f18f2db60470d91238c61bd1c150bd2e25b7eb068f",
+      "schemaVersion": 1,
+      "producer": "pc-exporter",
+      "producerVersion": "0.2.0",
+      "generatedAt": "2026-10-17T20:28:05.174680Z",
+      "entryCount": 619,
+      "completeness": "complete-synchronized-store"
+    }
+  },
+  "neutralAspects": [
+    "male",
+    "female",
+    "genderless",
+    "shiny"
+  ],
+  "skins": [
+    {
+      "aspect": "october2026spooky",
+      "officialName": "October 2026 Spooky Set",
+      "displayName": "Spooky",
+      "aliases": [],
+      "identityStatus": "confirmed",
+      "evidenceStatus": "proposed",
+      "reportOrder": 1
+    },
+    {
+      "aspect": "september2026crystall",
+      "officialName": "September 2026 Crystal Set",
+      "displayName": "Crystal",
+      "aliases": [],
+      "identityStatus": "confirmed",
+      "evidenceStatus": "reviewed",
+      "reportOrder": 2
+    },
+    {
+      "aspect": "tron2026",
+      "officialName": "June 2026 Neon Skins",
+      "displayName": "Neon",
+      "aliases": [
+        "Tron"
+      ],
+      "identityStatus": "confirmed",
+      "evidenceStatus": "proposed",
+      "reportOrder": 3
+    },
+    {
+      "aspect": "august2026western",
+      "officialName": "August 2026 Wild West Set",
+      "displayName": "Western",
+      "aliases": [
+        "Wild West"
+      ],
+      "identityStatus": "confirmed",
+      "evidenceStatus": "reviewed",
+      "reportOrder": 4
+    },
+    {
+      "aspect": "petal2026",
+      "officialName": "April 2026 Petal Set",
+      "displayName": "Petal",
+      "aliases": [],
+      "identityStatus": "confirmed",
+      "evidenceStatus": "reviewed",
+      "reportOrder": 5
+    },
+    {
+      "aspect": "july2026kimono",
+      "officialName": "July 2026 Kimono Set",
+      "displayName": "Kimono",
+      "aliases": [],
+      "identityStatus": "confirmed",
+      "evidenceStatus": "reviewed",
+      "reportOrder": 6
+    },
+    {
+      "aspect": "relic2026",
+      "officialName": "May 2026 Relic Set",
+      "displayName": "Relic",
+      "aliases": [],
+      "identityStatus": "confirmed",
+      "evidenceStatus": "reviewed",
+      "reportOrder": 7
+    },
+    {
+      "aspect": "easter2026",
+      "officialName": "Easter",
+      "displayName": "Easter",
+      "aliases": [],
+      "identityStatus": "confirmed",
+      "evidenceStatus": "candidate",
+      "reportOrder": 8
+    }
+  ],
+  "nonSkinAspects": [
+    {
+      "aspect": "radiation",
+      "reason": "gameplay/custom marker; owner-confirmed not a skin"
+    },
+    {
+      "aspect": "archelian",
+      "reason": "regional/custom form; owner-confirmed not a skin"
+    },
+    {
+      "aspect": "alatian",
+      "reason": "regional/custom form; owner-confirmed not a skin"
+    },
+    {
+      "aspect": "mega",
+      "reason": "Mega Evolution state, not a skin family"
+    },
+    {
+      "aspect": "gmax",
+      "reason": "Gigantamax factor, not a skin family"
+    },
+    {
+      "aspect": "dynamax",
+      "reason": "Dynamax state, not a skin family"
+    },
+    {
+      "aspect": "alpha",
+      "reason": "alpha gameplay marker, not a skin family"
+    },
+    {
+      "aspect": "alpha_eyes",
+      "reason": "alpha appearance marker, not a skin family"
+    },
+    {
+      "aspect": "ice_face",
+      "reason": "Eiscue form appearance token, not a skin family"
+    },
+    {
+      "aspect": "shield-forme",
+      "reason": "form token; appearance modifier, not a skin family"
+    },
+    {
+      "aspect": "hero",
+      "reason": "form token; appearance modifier, not a skin family"
+    },
+    {
+      "aspect": "disguised-form",
+      "reason": "form token; appearance modifier, not a skin family"
+    },
+    {
+      "aspect": "hisuian",
+      "reason": "regional form token, not a skin family"
+    },
+    {
+      "aspect": "alolan",
+      "reason": "regional form token, not a skin family"
+    },
+    {
+      "aspect": "galarian",
+      "reason": "regional form token, not a skin family"
+    },
+    {
+      "aspect": "paldean",
+      "reason": "regional form token, not a skin family"
+    },
+    {
+      "aspect": "region-bias-hisui",
+      "reason": "regional form token, not a skin family"
+    },
+    {
+      "aspect": "region-bias-alola",
+      "reason": "regional form token, not a skin family"
+    },
+    {
+      "aspect": "maushold-family-four",
+      "reason": "form token, not a skin family"
+    },
+    {
+      "aspect": "summer",
+      "reason": "seasonal/form appearance token, not a skin family"
+    },
+    {
+      "aspect": "tree-none",
+      "reason": "form appearance token, not a skin family"
+    },
+    {
+      "aspect": "special-spots-none",
+      "reason": "form appearance token, not a skin family"
+    },
+    {
+      "aspect": "face-spots2-5",
+      "reason": "form appearance token, not a skin family"
+    },
+    {
+      "aspect": "face-spots-3",
+      "reason": "form appearance token, not a skin family"
+    },
+    {
+      "aspect": "right-ear-spots-4",
+      "reason": "form appearance token, not a skin family"
+    },
+    {
+      "aspect": "left-ear-spots-6",
+      "reason": "form appearance token, not a skin family"
+    },
+    {
+      "aspect": "vivillon-wings-garden",
+      "reason": "pattern/form token, not a skin family"
+    },
+    {
+      "aspect": "natural-trim",
+      "reason": "form appearance token, not a skin family"
+    },
+    {
+      "aspect": "snake-pattern-attack",
+      "reason": "pattern/form token, not a skin family"
+    },
+    {
+      "aspect": "snake-pattern-legacy",
+      "reason": "pattern/form token, not a skin family"
+    },
+    {
+      "aspect": "snake-pattern-speed",
+      "reason": "pattern/form token, not a skin family"
+    },
+    {
+      "aspect": "squawkabilly-color-yellow",
+      "reason": "color/form token, not a skin family"
+    },
+    {
+      "aspect": "sensu-style",
+      "reason": "form token, not a skin family"
+    },
+    {
+      "aspect": "character-p",
+      "reason": "form token, not a skin family"
+    },
+    {
+      "aspect": "roaming",
+      "reason": "gameplay/form token, not a skin family"
+    },
+    {
+      "aspect": "flower-orange",
+      "reason": "form appearance token, not a skin family"
+    },
+    {
+      "aspect": "flower-white",
+      "reason": "form appearance token, not a skin family"
+    },
+    {
+      "aspect": "combat-breed",
+      "reason": "form token, not a skin family"
+    },
+    {
+      "aspect": "incarnate-forme",
+      "reason": "form token, not a skin family"
+    },
+    {
+      "aspect": "bluestriped",
+      "reason": "form token, not a skin family"
+    },
+    {
+      "aspect": "low_key-form",
+      "reason": "form token, not a skin family"
+    },
+    {
+      "aspect": "amped-form",
+      "reason": "form token, not a skin family"
+    },
+    {
+      "aspect": "wash-appliance",
+      "reason": "form token, not a skin family"
+    },
+    {
+      "aspect": "fished",
+      "reason": "gameplay acquisition marker, not a skin family"
+    }
+  ],
+  "unresolvedAspects": [
+    {
+      "aspect": "magikarp-jump-standard",
+      "reason": "observed event/appearance token; skin status not owner-approved"
+    },
+    {
+      "aspect": "magikarp-jump-blue-saucy",
+      "reason": "observed event/appearance token; skin status not owner-approved"
+    },
+    {
+      "aspect": "magikarp-jump-pink-dapples",
+      "reason": "observed event/appearance token; skin status not owner-approved"
+    },
+    {
+      "aspect": "magikarp-jump-blue-raindrops",
+      "reason": "observed event/appearance token; skin status not owner-approved"
+    },
+    {
+      "aspect": "gyarados-eye-color-purple",
+      "reason": "observed appearance token; skin status not owner-approved"
+    },
+    {
+      "aspect": "gyarados-eye-color-red",
+      "reason": "observed appearance token; skin status not owner-approved"
+    },
+    {
+      "aspect": "regrown-tail-1",
+      "reason": "observed appearance token; skin status not owner-approved"
+    },
+    {
+      "aspect": "regrown-tail-2",
+      "reason": "observed appearance token; skin status not owner-approved"
+    },
+    {
+      "aspect": "regrown-tail-3",
+      "reason": "observed appearance token; skin status not owner-approved"
+    }
+  ],
+  "categories": {
+    "legendary": [
+      {
+        "species": "cobblemon:articuno",
+        "name": "Articuno",
+        "dex": 144,
+        "labels": [
+          "gen1",
+          "kantonian_form",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:zapdos",
+        "name": "Zapdos",
+        "dex": 145,
+        "labels": [
+          "gen1",
+          "kantonian_form",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:moltres",
+        "name": "Moltres",
+        "dex": 146,
+        "labels": [
+          "gen1",
+          "kantonian_form",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:mewtwo",
+        "name": "Mewtwo",
+        "dex": 150,
+        "labels": [
+          "gen1",
+          "legendary",
+          "restricted"
+        ]
+      },
+      {
+        "species": "cobblemon:raikou",
+        "name": "Raikou",
+        "dex": 243,
+        "labels": [
+          "gen2",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:entei",
+        "name": "Entei",
+        "dex": 244,
+        "labels": [
+          "gen2",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:suicune",
+        "name": "Suicune",
+        "dex": 245,
+        "labels": [
+          "gen2",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:lugia",
+        "name": "Lugia",
+        "dex": 249,
+        "labels": [
+          "gen2",
+          "legendary",
+          "restricted"
+        ]
+      },
+      {
+        "species": "cobblemon:hooh",
+        "name": "Ho-Oh",
+        "dex": 250,
+        "labels": [
+          "gen2",
+          "legendary",
+          "restricted"
+        ]
+      },
+      {
+        "species": "cobblemon:regirock",
+        "name": "Regirock",
+        "dex": 377,
+        "labels": [
+          "gen3",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:regice",
+        "name": "Regice",
+        "dex": 378,
+        "labels": [
+          "gen3",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:registeel",
+        "name": "Registeel",
+        "dex": 379,
+        "labels": [
+          "gen3",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:latias",
+        "name": "Latias",
+        "dex": 380,
+        "labels": [
+          "gen3",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:latios",
+        "name": "Latios",
+        "dex": 381,
+        "labels": [
+          "gen3",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:kyogre",
+        "name": "Kyogre",
+        "dex": 382,
+        "labels": [
+          "gen3",
+          "legendary",
+          "restricted"
+        ]
+      },
+      {
+        "species": "cobblemon:groudon",
+        "name": "Groudon",
+        "dex": 383,
+        "labels": [
+          "gen3",
+          "legendary",
+          "restricted"
+        ]
+      },
+      {
+        "species": "cobblemon:rayquaza",
+        "name": "Rayquaza",
+        "dex": 384,
+        "labels": [
+          "gen3",
+          "legendary",
+          "restricted"
+        ]
+      },
+      {
+        "species": "cobblemon:uxie",
+        "name": "Uxie",
+        "dex": 480,
+        "labels": [
+          "gen4",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:mesprit",
+        "name": "Mesprit",
+        "dex": 481,
+        "labels": [
+          "gen4",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:azelf",
+        "name": "Azelf",
+        "dex": 482,
+        "labels": [
+          "gen4",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:dialga",
+        "name": "Dialga",
+        "dex": 483,
+        "labels": [
+          "gen4",
+          "legendary",
+          "restricted"
+        ]
+      },
+      {
+        "species": "cobblemon:palkia",
+        "name": "Palkia",
+        "dex": 484,
+        "labels": [
+          "gen4",
+          "legendary",
+          "restricted"
+        ]
+      },
+      {
+        "species": "cobblemon:heatran",
+        "name": "Heatran",
+        "dex": 485,
+        "labels": [
+          "gen4",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:regigigas",
+        "name": "Regigigas",
+        "dex": 486,
+        "labels": [
+          "gen4",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:giratina",
+        "name": "Giratina",
+        "dex": 487,
+        "labels": [
+          "gen4",
+          "legendary",
+          "restricted"
+        ]
+      },
+      {
+        "species": "cobblemon:cresselia",
+        "name": "Cresselia",
+        "dex": 488,
+        "labels": [
+          "gen4",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:cobalion",
+        "name": "Cobalion",
+        "dex": 638,
+        "labels": [
+          "gen5",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:terrakion",
+        "name": "Terrakion",
+        "dex": 639,
+        "labels": [
+          "gen5",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:virizion",
+        "name": "Virizion",
+        "dex": 640,
+        "labels": [
+          "gen5",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:tornadus",
+        "name": "Tornadus",
+        "dex": 641,
+        "labels": [
+          "gen5",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:thundurus",
+        "name": "Thundurus",
+        "dex": 642,
+        "labels": [
+          "gen5",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:reshiram",
+        "name": "Reshiram",
+        "dex": 643,
+        "labels": [
+          "gen5",
+          "legendary",
+          "restricted"
+        ]
+      },
+      {
+        "species": "cobblemon:zekrom",
+        "name": "Zekrom",
+        "dex": 644,
+        "labels": [
+          "gen5",
+          "legendary",
+          "restricted"
+        ]
+      },
+      {
+        "species": "cobblemon:landorus",
+        "name": "Landorus",
+        "dex": 645,
+        "labels": [
+          "gen5",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:kyurem",
+        "name": "Kyurem",
+        "dex": 646,
+        "labels": [
+          "gen5",
+          "legendary",
+          "restricted"
+        ]
+      },
+      {
+        "species": "cobblemon:xerneas",
+        "name": "Xerneas",
+        "dex": 716,
+        "labels": [
+          "gen6",
+          "legendary",
+          "restricted"
+        ]
+      },
+      {
+        "species": "cobblemon:yveltal",
+        "name": "Yveltal",
+        "dex": 717,
+        "labels": [
+          "gen6",
+          "legendary",
+          "restricted"
+        ]
+      },
+      {
+        "species": "cobblemon:zygarde",
+        "name": "Zygarde",
+        "dex": 718,
+        "labels": [
+          "gen6",
+          "legendary",
+          "restricted"
+        ]
+      },
+      {
+        "species": "cobblemon:typenull",
+        "name": "Type: Null",
+        "dex": 772,
+        "labels": [
+          "gen7",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:silvally",
+        "name": "Silvally",
+        "dex": 773,
+        "labels": [
+          "gen7",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:tapukoko",
+        "name": "Tapu Koko",
+        "dex": 785,
+        "labels": [
+          "gen7",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:tapulele",
+        "name": "Tapu Lele",
+        "dex": 786,
+        "labels": [
+          "gen7",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:tapubulu",
+        "name": "Tapu Bulu",
+        "dex": 787,
+        "labels": [
+          "gen7",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:tapufini",
+        "name": "Tapu Fini",
+        "dex": 788,
+        "labels": [
+          "gen7",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:cosmog",
+        "name": "Cosmog",
+        "dex": 789,
+        "labels": [
+          "gen7",
+          "legendary",
+          "restricted"
+        ]
+      },
+      {
+        "species": "cobblemon:cosmoem",
+        "name": "Cosmoem",
+        "dex": 790,
+        "labels": [
+          "gen7",
+          "legendary",
+          "restricted"
+        ]
+      },
+      {
+        "species": "cobblemon:solgaleo",
+        "name": "Solgaleo",
+        "dex": 791,
+        "labels": [
+          "gen7",
+          "legendary",
+          "restricted"
+        ]
+      },
+      {
+        "species": "cobblemon:lunala",
+        "name": "Lunala",
+        "dex": 792,
+        "labels": [
+          "gen7",
+          "legendary",
+          "restricted"
+        ]
+      },
+      {
+        "species": "cobblemon:necrozma",
+        "name": "Necrozma",
+        "dex": 800,
+        "labels": [
+          "gen7",
+          "legendary",
+          "restricted"
+        ]
+      },
+      {
+        "species": "cobblemon:zacian",
+        "name": "Zacian",
+        "dex": 888,
+        "labels": [
+          "gen8",
+          "legendary",
+          "restricted"
+        ]
+      },
+      {
+        "species": "cobblemon:zamazenta",
+        "name": "Zamazenta",
+        "dex": 889,
+        "labels": [
+          "gen8",
+          "legendary",
+          "restricted"
+        ]
+      },
+      {
+        "species": "cobblemon:eternatus",
+        "name": "Eternatus",
+        "dex": 890,
+        "labels": [
+          "gen8",
+          "legendary",
+          "restricted"
+        ]
+      },
+      {
+        "species": "cobblemon:kubfu",
+        "name": "Kubfu",
+        "dex": 891,
+        "labels": [
+          "gen8",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:urshifu",
+        "name": "Urshifu",
+        "dex": 892,
+        "labels": [
+          "gen8",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:regieleki",
+        "name": "Regieleki",
+        "dex": 894,
+        "labels": [
+          "gen8",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:regidrago",
+        "name": "Regidrago",
+        "dex": 895,
+        "labels": [
+          "gen8",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:glastrier",
+        "name": "Glastrier",
+        "dex": 896,
+        "labels": [
+          "gen8",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:spectrier",
+        "name": "Spectrier",
+        "dex": 897,
+        "labels": [
+          "gen8",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:calyrex",
+        "name": "Calyrex",
+        "dex": 898,
+        "labels": [
+          "gen8",
+          "legendary",
+          "restricted"
+        ]
+      },
+      {
+        "species": "cobblemon:enamorus",
+        "name": "Enamorus",
+        "dex": 905,
+        "labels": [
+          "gen8a",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:wochien",
+        "name": "Wo-Chien",
+        "dex": 1001,
+        "labels": [
+          "gen9",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:chienpao",
+        "name": "Chien-Pao",
+        "dex": 1002,
+        "labels": [
+          "gen9",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:tinglu",
+        "name": "Ting-Lu",
+        "dex": 1003,
+        "labels": [
+          "gen9",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:chiyu",
+        "name": "Chi-Yu",
+        "dex": 1004,
+        "labels": [
+          "gen9",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:koraidon",
+        "name": "Koraidon",
+        "dex": 1007,
+        "labels": [
+          "gen9",
+          "legendary",
+          "restricted"
+        ]
+      },
+      {
+        "species": "cobblemon:miraidon",
+        "name": "Miraidon",
+        "dex": 1008,
+        "labels": [
+          "gen9",
+          "legendary",
+          "restricted"
+        ]
+      },
+      {
+        "species": "cobblemon:okidogi",
+        "name": "Okidogi",
+        "dex": 1014,
+        "labels": [
+          "gen9",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:munkidori",
+        "name": "Munkidori",
+        "dex": 1015,
+        "labels": [
+          "gen9",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:fezandipiti",
+        "name": "Fezandipiti",
+        "dex": 1016,
+        "labels": [
+          "gen9",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:ogerpon",
+        "name": "Ogerpon",
+        "dex": 1017,
+        "labels": [
+          "gen9",
+          "legendary"
+        ]
+      },
+      {
+        "species": "cobblemon:terapagos",
+        "name": "Terapagos",
+        "dex": 1024,
+        "labels": [
+          "gen9",
+          "legendary",
+          "restricted"
+        ]
+      }
+    ],
+    "mythical": [
+      {
+        "species": "cobblemon:mew",
+        "name": "Mew",
+        "dex": 151,
+        "labels": [
+          "gen1",
+          "mythical"
+        ]
+      },
+      {
+        "species": "cobblemon:celebi",
+        "name": "Celebi",
+        "dex": 251,
+        "labels": [
+          "gen2",
+          "mythical"
+        ]
+      },
+      {
+        "species": "cobblemon:jirachi",
+        "name": "Jirachi",
+        "dex": 385,
+        "labels": [
+          "gen3",
+          "mythical"
+        ]
+      },
+      {
+        "species": "cobblemon:deoxys",
+        "name": "Deoxys",
+        "dex": 386,
+        "labels": [
+          "gen3",
+          "mythical"
+        ]
+      },
+      {
+        "species": "cobblemon:phione",
+        "name": "Phione",
+        "dex": 489,
+        "labels": [
+          "gen4",
+          "mythical"
+        ]
+      },
+      {
+        "species": "cobblemon:manaphy",
+        "name": "Manaphy",
+        "dex": 490,
+        "labels": [
+          "gen4",
+          "mythical"
+        ]
+      },
+      {
+        "species": "cobblemon:darkrai",
+        "name": "Darkrai",
+        "dex": 491,
+        "labels": [
+          "gen4",
+          "mythical"
+        ]
+      },
+      {
+        "species": "cobblemon:shaymin",
+        "name": "Shaymin",
+        "dex": 492,
+        "labels": [
+          "gen4",
+          "mythical"
+        ]
+      },
+      {
+        "species": "cobblemon:arceus",
+        "name": "Arceus",
+        "dex": 493,
+        "labels": [
+          "gen4",
+          "mythical"
+        ]
+      },
+      {
+        "species": "cobblemon:victini",
+        "name": "Victini",
+        "dex": 494,
+        "labels": [
+          "gen5",
+          "mythical"
+        ]
+      },
+      {
+        "species": "cobblemon:keldeo",
+        "name": "Keldeo",
+        "dex": 647,
+        "labels": [
+          "gen5",
+          "mythical"
+        ]
+      },
+      {
+        "species": "cobblemon:meloetta",
+        "name": "Meloetta",
+        "dex": 648,
+        "labels": [
+          "gen5",
+          "mythical"
+        ]
+      },
+      {
+        "species": "cobblemon:genesect",
+        "name": "Genesect",
+        "dex": 649,
+        "labels": [
+          "gen5",
+          "mythical"
+        ]
+      },
+      {
+        "species": "cobblemon:diancie",
+        "name": "Diancie",
+        "dex": 719,
+        "labels": [
+          "gen6",
+          "mythical"
+        ]
+      },
+      {
+        "species": "cobblemon:hoopa",
+        "name": "Hoopa",
+        "dex": 720,
+        "labels": [
+          "gen6",
+          "mythical"
+        ]
+      },
+      {
+        "species": "cobblemon:volcanion",
+        "name": "Volcanion",
+        "dex": 721,
+        "labels": [
+          "gen6",
+          "mythical"
+        ]
+      },
+      {
+        "species": "cobblemon:magearna",
+        "name": "Magearna",
+        "dex": 801,
+        "labels": [
+          "gen7",
+          "mythical"
+        ]
+      },
+      {
+        "species": "cobblemon:marshadow",
+        "name": "Marshadow",
+        "dex": 802,
+        "labels": [
+          "gen7",
+          "mythical"
+        ]
+      },
+      {
+        "species": "cobblemon:zeraora",
+        "name": "Zeraora",
+        "dex": 807,
+        "labels": [
+          "gen7",
+          "mythical"
+        ]
+      },
+      {
+        "species": "cobblemon:meltan",
+        "name": "Meltan",
+        "dex": 808,
+        "labels": [
+          "gen7b",
+          "mythical"
+        ]
+      },
+      {
+        "species": "cobblemon:melmetal",
+        "name": "Melmetal",
+        "dex": 809,
+        "labels": [
+          "gen7b",
+          "mythical"
+        ]
+      },
+      {
+        "species": "cobblemon:zarude",
+        "name": "Zarude",
+        "dex": 893,
+        "labels": [
+          "gen8",
+          "mythical"
+        ]
+      },
+      {
+        "species": "cobblemon:pecharunt",
+        "name": "Pecharunt",
+        "dex": 1025,
+        "labels": [
+          "gen9",
+          "mythical"
+        ]
+      }
+    ],
+    "paradox": [
+      {
+        "species": "cobblemon:greattusk",
+        "name": "Great Tusk",
+        "dex": 984,
+        "labels": [
+          "gen9",
+          "paradox"
+        ]
+      },
+      {
+        "species": "cobblemon:screamtail",
+        "name": "Scream Tail",
+        "dex": 985,
+        "labels": [
+          "gen9",
+          "paradox"
+        ]
+      },
+      {
+        "species": "cobblemon:brutebonnet",
+        "name": "Brute Bonnet",
+        "dex": 986,
+        "labels": [
+          "gen9",
+          "paradox"
+        ]
+      },
+      {
+        "species": "cobblemon:fluttermane",
+        "name": "Flutter Mane",
+        "dex": 987,
+        "labels": [
+          "gen9",
+          "paradox"
+        ]
+      },
+      {
+        "species": "cobblemon:slitherwing",
+        "name": "Slither Wing",
+        "dex": 988,
+        "labels": [
+          "gen9",
+          "paradox"
+        ]
+      },
+      {
+        "species": "cobblemon:sandyshocks",
+        "name": "Sandy Shocks",
+        "dex": 989,
+        "labels": [
+          "gen9",
+          "paradox"
+        ]
+      },
+      {
+        "species": "cobblemon:irontreads",
+        "name": "Iron Treads",
+        "dex": 990,
+        "labels": [
+          "gen9",
+          "paradox"
+        ]
+      },
+      {
+        "species": "cobblemon:ironbundle",
+        "name": "Iron Bundle",
+        "dex": 991,
+        "labels": [
+          "gen9",
+          "paradox"
+        ]
+      },
+      {
+        "species": "cobblemon:ironhands",
+        "name": "Iron Hands",
+        "dex": 992,
+        "labels": [
+          "gen9",
+          "paradox"
+        ]
+      },
+      {
+        "species": "cobblemon:ironjugulis",
+        "name": "Iron Jugulis",
+        "dex": 993,
+        "labels": [
+          "gen9",
+          "paradox"
+        ]
+      },
+      {
+        "species": "cobblemon:ironmoth",
+        "name": "Iron Moth",
+        "dex": 994,
+        "labels": [
+          "gen9",
+          "paradox"
+        ]
+      },
+      {
+        "species": "cobblemon:ironthorns",
+        "name": "Iron Thorns",
+        "dex": 995,
+        "labels": [
+          "gen9",
+          "paradox"
+        ]
+      },
+      {
+        "species": "cobblemon:roaringmoon",
+        "name": "Roaring Moon",
+        "dex": 1005,
+        "labels": [
+          "gen9",
+          "paradox"
+        ]
+      },
+      {
+        "species": "cobblemon:ironvaliant",
+        "name": "Iron Valiant",
+        "dex": 1006,
+        "labels": [
+          "gen9",
+          "paradox"
+        ]
+      },
+      {
+        "species": "cobblemon:walkingwake",
+        "name": "Walking Wake",
+        "dex": 1009,
+        "labels": [
+          "gen9",
+          "paradox"
+        ]
+      },
+      {
+        "species": "cobblemon:ironleaves",
+        "name": "Iron Leaves",
+        "dex": 1010,
+        "labels": [
+          "gen9",
+          "paradox"
+        ]
+      },
+      {
+        "species": "cobblemon:gougingfire",
+        "name": "Gouging Fire",
+        "dex": 1020,
+        "labels": [
+          "gen9",
+          "paradox"
+        ]
+      },
+      {
+        "species": "cobblemon:ragingbolt",
+        "name": "Raging Bolt",
+        "dex": 1021,
+        "labels": [
+          "gen9",
+          "paradox"
+        ]
+      },
+      {
+        "species": "cobblemon:ironboulder",
+        "name": "Iron Boulder",
+        "dex": 1022,
+        "labels": [
+          "gen9",
+          "paradox"
+        ]
+      },
+      {
+        "species": "cobblemon:ironcrown",
+        "name": "Iron Crown",
+        "dex": 1023,
+        "labels": [
+          "gen9",
+          "paradox"
+        ]
+      }
+    ],
+    "ultraBeast": [
+      {
+        "species": "cobblemon:nihilego",
+        "name": "Nihilego",
+        "dex": 793,
+        "labels": [
+          "gen7",
+          "ultra_beast"
+        ]
+      },
+      {
+        "species": "cobblemon:buzzwole",
+        "name": "Buzzwole",
+        "dex": 794,
+        "labels": [
+          "gen7",
+          "ultra_beast"
+        ]
+      },
+      {
+        "species": "cobblemon:pheromosa",
+        "name": "Pheromosa",
+        "dex": 795,
+        "labels": [
+          "gen7",
+          "ultra_beast"
+        ]
+      },
+      {
+        "species": "cobblemon:xurkitree",
+        "name": "Xurkitree",
+        "dex": 796,
+        "labels": [
+          "gen7",
+          "ultra_beast"
+        ]
+      },
+      {
+        "species": "cobblemon:celesteela",
+        "name": "Celesteela",
+        "dex": 797,
+        "labels": [
+          "gen7",
+          "ultra_beast"
+        ]
+      },
+      {
+        "species": "cobblemon:kartana",
+        "name": "Kartana",
+        "dex": 798,
+        "labels": [
+          "gen7",
+          "ultra_beast"
+        ]
+      },
+      {
+        "species": "cobblemon:guzzlord",
+        "name": "Guzzlord",
+        "dex": 799,
+        "labels": [
+          "gen7",
+          "ultra_beast"
+        ]
+      },
+      {
+        "species": "cobblemon:poipole",
+        "name": "Poipole",
+        "dex": 803,
+        "labels": [
+          "gen7",
+          "ultra_beast"
+        ]
+      },
+      {
+        "species": "cobblemon:naganadel",
+        "name": "Naganadel",
+        "dex": 804,
+        "labels": [
+          "gen7",
+          "ultra_beast"
+        ]
+      },
+      {
+        "species": "cobblemon:stakataka",
+        "name": "Stakataka",
+        "dex": 805,
+        "labels": [
+          "gen7",
+          "ultra_beast"
+        ]
+      },
+      {
+        "species": "cobblemon:blacephalon",
+        "name": "Blacephalon",
+        "dex": 806,
+        "labels": [
+          "gen7",
+          "ultra_beast"
+        ]
+      }
+    ]
+  },
+  "baseSpecies": [
+    "cobblemon:abomasnow",
+    "cobblemon:abra",
+    "cobblemon:absol",
+    "cobblemon:accelgor",
+    "cobblemon:aegislash",
+    "cobblemon:aerodactyl",
+    "cobblemon:aggron",
+    "cobblemon:aipom",
+    "cobblemon:alakazam",
+    "cobblemon:alcremie",
+    "cobblemon:alomomola",
+    "cobblemon:altaria",
+    "cobblemon:amaura",
+    "cobblemon:ambipom",
+    "cobblemon:amoonguss",
+    "cobblemon:ampharos",
+    "cobblemon:annihilape",
+    "cobblemon:anorith",
+    "cobblemon:appletun",
+    "cobblemon:applin",
+    "cobblemon:araquanid",
+    "cobblemon:arbok",
+    "cobblemon:arboliva",
+    "cobblemon:arcanine",
+    "cobblemon:arceus",
+    "cobblemon:archaludon",
+    "cobblemon:archen",
+    "cobblemon:archeops",
+    "cobblemon:arctibax",
+    "cobblemon:arctovish",
+    "cobblemon:arctozolt",
+    "cobblemon:ariados",
+    "cobblemon:armaldo",
+    "cobblemon:armarouge",
+    "cobblemon:aromatisse",
+    "cobblemon:aron",
+    "cobblemon:arrokuda",
+    "cobblemon:articuno",
+    "cobblemon:audino",
+    "cobblemon:aurorus",
+    "cobblemon:avalugg",
+    "cobblemon:axew",
+    "cobblemon:azelf",
+    "cobblemon:azumarill",
+    "cobblemon:azurill",
+    "cobblemon:bagon",
+    "cobblemon:baltoy",
+    "cobblemon:banette",
+    "cobblemon:barbaracle",
+    "cobblemon:barboach",
+    "cobblemon:barraskewda",
+    "cobblemon:basculegion",
+    "cobblemon:basculin",
+    "cobblemon:bastiodon",
+    "cobblemon:baxcalibur",
+    "cobblemon:bayleef",
+    "cobblemon:beartic",
+    "cobblemon:beautifly",
+    "cobblemon:beedrill",
+    "cobblemon:beheeyem",
+    "cobblemon:beldum",
+    "cobblemon:bellibolt",
+    "cobblemon:bellossom",
+    "cobblemon:bellsprout",
+    "cobblemon:bergmite",
+    "cobblemon:bewear",
+    "cobblemon:bibarel",
+    "cobblemon:bidoof",
+    "cobblemon:binacle",
+    "cobblemon:bisharp",
+    "cobblemon:blacephalon",
+    "cobblemon:blastoise",
+    "cobblemon:blaziken",
+    "cobblemon:blipbug",
+    "cobblemon:blissey",
+    "cobblemon:blitzle",
+    "cobblemon:boldore",
+    "cobblemon:boltund",
+    "cobblemon:bombirdier",
+    "cobblemon:bonsly",
+    "cobblemon:bouffalant",
+    "cobblemon:bounsweet",
+    "cobblemon:braixen",
+    "cobblemon:brambleghast",
+    "cobblemon:bramblin",
+    "cobblemon:braviary",
+    "cobblemon:breloom",
+    "cobblemon:brionne",
+    "cobblemon:bronzong",
+    "cobblemon:bronzor",
+    "cobblemon:brutebonnet",
+    "cobblemon:bruxish",
+    "cobblemon:budew",
+    "cobblemon:buizel",
+    "cobblemon:bulbasaur",
+    "cobblemon:buneary",
+    "cobblemon:bunnelby",
+    "cobblemon:burmy",
+    "cobblemon:butterfree",
+    "cobblemon:buzzwole",
+    "cobblemon:cacnea",
+    "cobblemon:cacturne",
+    "cobblemon:calyrex",
+    "cobblemon:camerupt",
+    "cobblemon:capsakid",
+    "cobblemon:carbink",
+    "cobblemon:carkol",
+    "cobblemon:carnivine",
+    "cobblemon:carracosta",
+    "cobblemon:carvanha",
+    "cobblemon:cascoon",
+    "cobblemon:castform",
+    "cobblemon:caterpie",
+    "cobblemon:celebi",
+    "cobblemon:celesteela",
+    "cobblemon:centiskorch",
+    "cobblemon:ceruledge",
+    "cobblemon:cetitan",
+    "cobblemon:cetoddle",
+    "cobblemon:chandelure",
+    "cobblemon:chansey",
+    "cobblemon:charcadet",
+    "cobblemon:charizard",
+    "cobblemon:charjabug",
+    "cobblemon:charmander",
+    "cobblemon:charmeleon",
+    "cobblemon:chatot",
+    "cobblemon:cherrim",
+    "cobblemon:cherubi",
+    "cobblemon:chesnaught",
+    "cobblemon:chespin",
+    "cobblemon:chewtle",
+    "cobblemon:chienpao",
+    "cobblemon:chikorita",
+    "cobblemon:chimchar",
+    "cobblemon:chimecho",
+    "cobblemon:chinchou",
+    "cobblemon:chingling",
+    "cobblemon:chiyu",
+    "cobblemon:cinccino",
+    "cobblemon:cinderace",
+    "cobblemon:clamperl",
+    "cobblemon:clauncher",
+    "cobblemon:clawitzer",
+    "cobblemon:claydol",
+    "cobblemon:clefable",
+    "cobblemon:clefairy",
+    "cobblemon:cleffa",
+    "cobblemon:clobbopus",
+    "cobblemon:clodsire",
+    "cobblemon:cloyster",
+    "cobblemon:coalossal",
+    "cobblemon:cobalion",
+    "cobblemon:cofagrigus",
+    "cobblemon:combee",
+    "cobblemon:combusken",
+    "cobblemon:comfey",
+    "cobblemon:conkeldurr",
+    "cobblemon:copperajah",
+    "cobblemon:corphish",
+    "cobblemon:corsola",
+    "cobblemon:corviknight",
+    "cobblemon:corvisquire",
+    "cobblemon:cosmoem",
+    "cobblemon:cosmog",
+    "cobblemon:cottonee",
+    "cobblemon:crabominable",
+    "cobblemon:crabrawler",
+    "cobblemon:cradily",
+    "cobblemon:cramorant",
+    "cobblemon:cranidos",
+    "cobblemon:crawdaunt",
+    "cobblemon:cresselia",
+    "cobblemon:croagunk",
+    "cobblemon:crobat",
+    "cobblemon:crocalor",
+    "cobblemon:croconaw",
+    "cobblemon:crustle",
+    "cobblemon:cryogonal",
+    "cobblemon:cubchoo",
+    "cobblemon:cubone",
+    "cobblemon:cufant",
+    "cobblemon:cursola",
+    "cobblemon:cutiefly",
+    "cobblemon:cyclizar",
+    "cobblemon:cyndaquil",
+    "cobblemon:dachsbun",
+    "cobblemon:darkrai",
+    "cobblemon:darmanitan",
+    "cobblemon:dartrix",
+    "cobblemon:darumaka",
+    "cobblemon:decidueye",
+    "cobblemon:dedenne",
+    "cobblemon:deerling",
+    "cobblemon:deino",
+    "cobblemon:delcatty",
+    "cobblemon:delibird",
+    "cobblemon:delphox",
+    "cobblemon:deoxys",
+    "cobblemon:dewgong",
+    "cobblemon:dewott",
+    "cobblemon:dewpider",
+    "cobblemon:dhelmise",
+    "cobblemon:dialga",
+    "cobblemon:diancie",
+    "cobblemon:diggersby",
+    "cobblemon:diglett",
+    "cobblemon:dipplin",
+    "cobblemon:ditto",
+    "cobblemon:dodrio",
+    "cobblemon:doduo",
+    "cobblemon:dolliv",
+    "cobblemon:dondozo",
+    "cobblemon:donphan",
+    "cobblemon:dottler",
+    "cobblemon:doublade",
+    "cobblemon:dracovish",
+    "cobblemon:dracozolt",
+    "cobblemon:dragalge",
+    "cobblemon:dragapult",
+    "cobblemon:dragonair",
+    "cobblemon:dragonite",
+    "cobblemon:drakloak",
+    "cobblemon:drampa",
+    "cobblemon:drapion",
+    "cobblemon:dratini",
+    "cobblemon:drednaw",
+    "cobblemon:dreepy",
+    "cobblemon:drifblim",
+    "cobblemon:drifloon",
+    "cobblemon:drilbur",
+    "cobblemon:drizzile",
+    "cobblemon:drowzee",
+    "cobblemon:druddigon",
+    "cobblemon:dubwool",
+    "cobblemon:ducklett",
+    "cobblemon:dudunsparce",
+    "cobblemon:dugtrio",
+    "cobblemon:dunsparce",
+    "cobblemon:duosion",
+    "cobblemon:duraludon",
+    "cobblemon:durant",
+    "cobblemon:dusclops",
+    "cobblemon:dusknoir",
+    "cobblemon:duskull",
+    "cobblemon:dustox",
+    "cobblemon:dwebble",
+    "cobblemon:eelektrik",
+    "cobblemon:eelektross",
+    "cobblemon:eevee",
+    "cobblemon:eiscue",
+    "cobblemon:ekans",
+    "cobblemon:eldegoss",
+    "cobblemon:electabuzz",
+    "cobblemon:electivire",
+    "cobblemon:electrike",
+    "cobblemon:electrode",
+    "cobblemon:elekid",
+    "cobblemon:elgyem",
+    "cobblemon:emboar",
+    "cobblemon:emolga",
+    "cobblemon:empoleon",
+    "cobblemon:enamorus",
+    "cobblemon:entei",
+    "cobblemon:escavalier",
+    "cobblemon:espathra",
+    "cobblemon:espeon",
+    "cobblemon:espurr",
+    "cobblemon:eternatus",
+    "cobblemon:excadrill",
+    "cobblemon:exeggcute",
+    "cobblemon:exeggutor",
+    "cobblemon:exploud",
+    "cobblemon:falinks",
+    "cobblemon:farfetchd",
+    "cobblemon:farigiraf",
+    "cobblemon:fearow",
+    "cobblemon:feebas",
+    "cobblemon:fennekin",
+    "cobblemon:feraligatr",
+    "cobblemon:ferroseed",
+    "cobblemon:ferrothorn",
+    "cobblemon:fezandipiti",
+    "cobblemon:fidough",
+    "cobblemon:finizen",
+    "cobblemon:finneon",
+    "cobblemon:flaaffy",
+    "cobblemon:flabebe",
+    "cobblemon:flamigo",
+    "cobblemon:flapple",
+    "cobblemon:flareon",
+    "cobblemon:fletchinder",
+    "cobblemon:fletchling",
+    "cobblemon:flittle",
+    "cobblemon:floatzel",
+    "cobblemon:floette",
+    "cobblemon:floragato",
+    "cobblemon:florges",
+    "cobblemon:fluttermane",
+    "cobblemon:flygon",
+    "cobblemon:fomantis",
+    "cobblemon:foongus",
+    "cobblemon:forretress",
+    "cobblemon:fraxure",
+    "cobblemon:frigibax",
+    "cobblemon:frillish",
+    "cobblemon:froakie",
+    "cobblemon:frogadier",
+    "cobblemon:froslass",
+    "cobblemon:frosmoth",
+    "cobblemon:fuecoco",
+    "cobblemon:furfrou",
+    "cobblemon:furret",
+    "cobblemon:gabite",
+    "cobblemon:gallade",
+    "cobblemon:galvantula",
+    "cobblemon:garbodor",
+    "cobblemon:garchomp",
+    "cobblemon:gardevoir",
+    "cobblemon:garganacl",
+    "cobblemon:gastly",
+    "cobblemon:gastrodon",
+    "cobblemon:genesect",
+    "cobblemon:gengar",
+    "cobblemon:geodude",
+    "cobblemon:gholdengo",
+    "cobblemon:gible",
+    "cobblemon:gigalith",
+    "cobblemon:gimmighoul",
+    "cobblemon:girafarig",
+    "cobblemon:giratina",
+    "cobblemon:glaceon",
+    "cobblemon:glalie",
+    "cobblemon:glameow",
+    "cobblemon:glastrier",
+    "cobblemon:gligar",
+    "cobblemon:glimmet",
+    "cobblemon:glimmora",
+    "cobblemon:gliscor",
+    "cobblemon:gloom",
+    "cobblemon:gogoat",
+    "cobblemon:golbat",
+    "cobblemon:goldeen",
+    "cobblemon:golduck",
+    "cobblemon:golem",
+    "cobblemon:golett",
+    "cobblemon:golisopod",
+    "cobblemon:golurk",
+    "cobblemon:goodra",
+    "cobblemon:goomy",
+    "cobblemon:gorebyss",
+    "cobblemon:gossifleur",
+    "cobblemon:gothita",
+    "cobblemon:gothitelle",
+    "cobblemon:gothorita",
+    "cobblemon:gougingfire",
+    "cobblemon:gourgeist",
+    "cobblemon:grafaiai",
+    "cobblemon:granbull",
+    "cobblemon:grapploct",
+    "cobblemon:graveler",
+    "cobblemon:greattusk",
+    "cobblemon:greavard",
+    "cobblemon:greedent",
+    "cobblemon:greninja",
+    "cobblemon:grimer",
+    "cobblemon:grimmsnarl",
+    "cobblemon:grookey",
+    "cobblemon:grotle",
+    "cobblemon:groudon",
+    "cobblemon:grovyle",
+    "cobblemon:growlithe",
+    "cobblemon:grubbin",
+    "cobblemon:grumpig",
+    "cobblemon:gulpin",
+    "cobblemon:gumshoos",
+    "cobblemon:gurdurr",
+    "cobblemon:guzzlord",
+    "cobblemon:gyarados",
+    "cobblemon:hakamoo",
+    "cobblemon:happiny",
+    "cobblemon:hariyama",
+    "cobblemon:hatenna",
+    "cobblemon:hatterene",
+    "cobblemon:hattrem",
+    "cobblemon:haunter",
+    "cobblemon:hawlucha",
+    "cobblemon:haxorus",
+    "cobblemon:heatmor",
+    "cobblemon:heatran",
+    "cobblemon:heliolisk",
+    "cobblemon:helioptile",
+    "cobblemon:heracross",
+    "cobblemon:herdier",
+    "cobblemon:hippopotas",
+    "cobblemon:hippowdon",
+    "cobblemon:hitmonchan",
+    "cobblemon:hitmonlee",
+    "cobblemon:hitmontop",
+    "cobblemon:honchkrow",
+    "cobblemon:honedge",
+    "cobblemon:hooh",
+    "cobblemon:hoopa",
+    "cobblemon:hoothoot",
+    "cobblemon:hoppip",
+    "cobblemon:horsea",
+    "cobblemon:houndoom",
+    "cobblemon:houndour",
+    "cobblemon:houndstone",
+    "cobblemon:huntail",
+    "cobblemon:hydrapple",
+    "cobblemon:hydreigon",
+    "cobblemon:hypno",
+    "cobblemon:igglybuff",
+    "cobblemon:illumise",
+    "cobblemon:impidimp",
+    "cobblemon:incineroar",
+    "cobblemon:indeedee",
+    "cobblemon:infernape",
+    "cobblemon:inkay",
+    "cobblemon:inteleon",
+    "cobblemon:ironboulder",
+    "cobblemon:ironbundle",
+    "cobblemon:ironcrown",
+    "cobblemon:ironhands",
+    "cobblemon:ironjugulis",
+    "cobblemon:ironleaves",
+    "cobblemon:ironmoth",
+    "cobblemon:ironthorns",
+    "cobblemon:irontreads",
+    "cobblemon:ironvaliant",
+    "cobblemon:ivysaur",
+    "cobblemon:jangmoo",
+    "cobblemon:jellicent",
+    "cobblemon:jigglypuff",
+    "cobblemon:jirachi",
+    "cobblemon:jolteon",
+    "cobblemon:joltik",
+    "cobblemon:jumpluff",
+    "cobblemon:jynx",
+    "cobblemon:kabuto",
+    "cobblemon:kabutops",
+    "cobblemon:kadabra",
+    "cobblemon:kakuna",
+    "cobblemon:kangaskhan",
+    "cobblemon:karrablast",
+    "cobblemon:kartana",
+    "cobblemon:kecleon",
+    "cobblemon:keldeo",
+    "cobblemon:kilowattrel",
+    "cobblemon:kingambit",
+    "cobblemon:kingdra",
+    "cobblemon:kingler",
+    "cobblemon:kirlia",
+    "cobblemon:klang",
+    "cobblemon:klawf",
+    "cobblemon:kleavor",
+    "cobblemon:klefki",
+    "cobblemon:klink",
+    "cobblemon:klinklang",
+    "cobblemon:koffing",
+    "cobblemon:komala",
+    "cobblemon:kommoo",
+    "cobblemon:koraidon",
+    "cobblemon:krabby",
+    "cobblemon:kricketot",
+    "cobblemon:kricketune",
+    "cobblemon:krokorok",
+    "cobblemon:krookodile",
+    "cobblemon:kubfu",
+    "cobblemon:kyogre",
+    "cobblemon:kyurem",
+    "cobblemon:lairon",
+    "cobblemon:lampent",
+    "cobblemon:landorus",
+    "cobblemon:lanturn",
+    "cobblemon:lapras",
+    "cobblemon:larvesta",
+    "cobblemon:larvitar",
+    "cobblemon:latias",
+    "cobblemon:latios",
+    "cobblemon:leafeon",
+    "cobblemon:leavanny",
+    "cobblemon:lechonk",
+    "cobblemon:ledian",
+    "cobblemon:ledyba",
+    "cobblemon:lickilicky",
+    "cobblemon:lickitung",
+    "cobblemon:liepard",
+    "cobblemon:lileep",
+    "cobblemon:lilligant",
+    "cobblemon:lillipup",
+    "cobblemon:linoone",
+    "cobblemon:litleo",
+    "cobblemon:litten",
+    "cobblemon:litwick",
+    "cobblemon:lokix",
+    "cobblemon:lombre",
+    "cobblemon:lopunny",
+    "cobblemon:lotad",
+    "cobblemon:loudred",
+    "cobblemon:lucario",
+    "cobblemon:ludicolo",
+    "cobblemon:lugia",
+    "cobblemon:lumineon",
+    "cobblemon:lunala",
+    "cobblemon:lunatone",
+    "cobblemon:lurantis",
+    "cobblemon:luvdisc",
+    "cobblemon:luxio",
+    "cobblemon:luxray",
+    "cobblemon:lycanroc",
+    "cobblemon:mabosstiff",
+    "cobblemon:machamp",
+    "cobblemon:machoke",
+    "cobblemon:machop",
+    "cobblemon:magby",
+    "cobblemon:magcargo",
+    "cobblemon:magearna",
+    "cobblemon:magikarp",
+    "cobblemon:magmar",
+    "cobblemon:magmortar",
+    "cobblemon:magnemite",
+    "cobblemon:magneton",
+    "cobblemon:magnezone",
+    "cobblemon:makuhita",
+    "cobblemon:malamar",
+    "cobblemon:mamoswine",
+    "cobblemon:manaphy",
+    "cobblemon:mandibuzz",
+    "cobblemon:manectric",
+    "cobblemon:mankey",
+    "cobblemon:mantine",
+    "cobblemon:mantyke",
+    "cobblemon:maractus",
+    "cobblemon:mareanie",
+    "cobblemon:mareep",
+    "cobblemon:marill",
+    "cobblemon:marowak",
+    "cobblemon:marshadow",
+    "cobblemon:marshtomp",
+    "cobblemon:maschiff",
+    "cobblemon:masquerain",
+    "cobblemon:maushold",
+    "cobblemon:mawile",
+    "cobblemon:medicham",
+    "cobblemon:meditite",
+    "cobblemon:meganium",
+    "cobblemon:melmetal",
+    "cobblemon:meloetta",
+    "cobblemon:meltan",
+    "cobblemon:meowscarada",
+    "cobblemon:meowstic",
+    "cobblemon:meowth",
+    "cobblemon:mesprit",
+    "cobblemon:metagross",
+    "cobblemon:metang",
+    "cobblemon:metapod",
+    "cobblemon:mew",
+    "cobblemon:mewtwo",
+    "cobblemon:mienfoo",
+    "cobblemon:mienshao",
+    "cobblemon:mightyena",
+    "cobblemon:milcery",
+    "cobblemon:milotic",
+    "cobblemon:miltank",
+    "cobblemon:mimejr",
+    "cobblemon:mimikyu",
+    "cobblemon:minccino",
+    "cobblemon:minior",
+    "cobblemon:minun",
+    "cobblemon:miraidon",
+    "cobblemon:misdreavus",
+    "cobblemon:mismagius",
+    "cobblemon:moltres",
+    "cobblemon:monferno",
+    "cobblemon:morelull",
+    "cobblemon:morgrem",
+    "cobblemon:morpeko",
+    "cobblemon:mothim",
+    "cobblemon:mrmime",
+    "cobblemon:mrrime",
+    "cobblemon:mudbray",
+    "cobblemon:mudkip",
+    "cobblemon:mudsdale",
+    "cobblemon:muk",
+    "cobblemon:munchlax",
+    "cobblemon:munkidori",
+    "cobblemon:munna",
+    "cobblemon:murkrow",
+    "cobblemon:musharna",
+    "cobblemon:nacli",
+    "cobblemon:naclstack",
+    "cobblemon:naganadel",
+    "cobblemon:natu",
+    "cobblemon:necrozma",
+    "cobblemon:nickit",
+    "cobblemon:nidoking",
+    "cobblemon:nidoqueen",
+    "cobblemon:nidoranf",
+    "cobblemon:nidoranm",
+    "cobblemon:nidorina",
+    "cobblemon:nidorino",
+    "cobblemon:nihilego",
+    "cobblemon:nincada",
+    "cobblemon:ninetales",
+    "cobblemon:ninjask",
+    "cobblemon:noctowl",
+    "cobblemon:noibat",
+    "cobblemon:noivern",
+    "cobblemon:nosepass",
+    "cobblemon:numel",
+    "cobblemon:nuzleaf",
+    "cobblemon:nymble",
+    "cobblemon:obstagoon",
+    "cobblemon:octillery",
+    "cobblemon:oddish",
+    "cobblemon:ogerpon",
+    "cobblemon:oinkologne",
+    "cobblemon:okidogi",
+    "cobblemon:omanyte",
+    "cobblemon:omastar",
+    "cobblemon:onix",
+    "cobblemon:oranguru",
+    "cobblemon:orbeetle",
+    "cobblemon:oricorio",
+    "cobblemon:orthworm",
+    "cobblemon:oshawott",
+    "cobblemon:overqwil",
+    "cobblemon:pachirisu",
+    "cobblemon:palafin",
+    "cobblemon:palkia",
+    "cobblemon:palossand",
+    "cobblemon:palpitoad",
+    "cobblemon:pancham",
+    "cobblemon:pangoro",
+    "cobblemon:panpour",
+    "cobblemon:pansage",
+    "cobblemon:pansear",
+    "cobblemon:paras",
+    "cobblemon:parasect",
+    "cobblemon:passimian",
+    "cobblemon:patrat",
+    "cobblemon:pawmi",
+    "cobblemon:pawmo",
+    "cobblemon:pawmot",
+    "cobblemon:pawniard",
+    "cobblemon:pecharunt",
+    "cobblemon:pelipper",
+    "cobblemon:perrserker",
+    "cobblemon:persian",
+    "cobblemon:petilil",
+    "cobblemon:phanpy",
+    "cobblemon:phantump",
+    "cobblemon:pheromosa",
+    "cobblemon:phione",
+    "cobblemon:pichu",
+    "cobblemon:pidgeot",
+    "cobblemon:pidgeotto",
+    "cobblemon:pidgey",
+    "cobblemon:pidove",
+    "cobblemon:pignite",
+    "cobblemon:pikachu",
+    "cobblemon:pikipek",
+    "cobblemon:piloswine",
+    "cobblemon:pincurchin",
+    "cobblemon:pineco",
+    "cobblemon:pinsir",
+    "cobblemon:piplup",
+    "cobblemon:plusle",
+    "cobblemon:poipole",
+    "cobblemon:politoed",
+    "cobblemon:poliwag",
+    "cobblemon:poliwhirl",
+    "cobblemon:poliwrath",
+    "cobblemon:poltchageist",
+    "cobblemon:polteageist",
+    "cobblemon:ponyta",
+    "cobblemon:poochyena",
+    "cobblemon:popplio",
+    "cobblemon:porygon",
+    "cobblemon:porygon2",
+    "cobblemon:porygonz",
+    "cobblemon:primarina",
+    "cobblemon:primeape",
+    "cobblemon:prinplup",
+    "cobblemon:probopass",
+    "cobblemon:psyduck",
+    "cobblemon:pumpkaboo",
+    "cobblemon:pupitar",
+    "cobblemon:purrloin",
+    "cobblemon:purugly",
+    "cobblemon:pyroar",
+    "cobblemon:pyukumuku",
+    "cobblemon:quagsire",
+    "cobblemon:quaquaval",
+    "cobblemon:quaxly",
+    "cobblemon:quaxwell",
+    "cobblemon:quilava",
+    "cobblemon:quilladin",
+    "cobblemon:qwilfish",
+    "cobblemon:raboot",
+    "cobblemon:rabsca",
+    "cobblemon:ragingbolt",
+    "cobblemon:raichu",
+    "cobblemon:raikou",
+    "cobblemon:ralts",
+    "cobblemon:rampardos",
+    "cobblemon:rapidash",
+    "cobblemon:raticate",
+    "cobblemon:rattata",
+    "cobblemon:rayquaza",
+    "cobblemon:regice",
+    "cobblemon:regidrago",
+    "cobblemon:regieleki",
+    "cobblemon:regigigas",
+    "cobblemon:regirock",
+    "cobblemon:registeel",
+    "cobblemon:relicanth",
+    "cobblemon:rellor",
+    "cobblemon:remoraid",
+    "cobblemon:reshiram",
+    "cobblemon:reuniclus",
+    "cobblemon:revavroom",
+    "cobblemon:rhydon",
+    "cobblemon:rhyhorn",
+    "cobblemon:rhyperior",
+    "cobblemon:ribombee",
+    "cobblemon:rillaboom",
+    "cobblemon:riolu",
+    "cobblemon:roaringmoon",
+    "cobblemon:rockruff",
+    "cobblemon:roggenrola",
+    "cobblemon:rolycoly",
+    "cobblemon:rookidee",
+    "cobblemon:roselia",
+    "cobblemon:roserade",
+    "cobblemon:rotom",
+    "cobblemon:rowlet",
+    "cobblemon:rufflet",
+    "cobblemon:runerigus",
+    "cobblemon:sableye",
+    "cobblemon:salamence",
+    "cobblemon:salandit",
+    "cobblemon:salazzle",
+    "cobblemon:samurott",
+    "cobblemon:sandaconda",
+    "cobblemon:sandile",
+    "cobblemon:sandshrew",
+    "cobblemon:sandslash",
+    "cobblemon:sandygast",
+    "cobblemon:sandyshocks",
+    "cobblemon:sawk",
+    "cobblemon:sawsbuck",
+    "cobblemon:scatterbug",
+    "cobblemon:sceptile",
+    "cobblemon:scizor",
+    "cobblemon:scolipede",
+    "cobblemon:scorbunny",
+    "cobblemon:scovillain",
+    "cobblemon:scrafty",
+    "cobblemon:scraggy",
+    "cobblemon:screamtail",
+    "cobblemon:scyther",
+    "cobblemon:seadra",
+    "cobblemon:seaking",
+    "cobblemon:sealeo",
+    "cobblemon:seedot",
+    "cobblemon:seel",
+    "cobblemon:seismitoad",
+    "cobblemon:sentret",
+    "cobblemon:serperior",
+    "cobblemon:servine",
+    "cobblemon:seviper",
+    "cobblemon:sewaddle",
+    "cobblemon:sharpedo",
+    "cobblemon:shaymin",
+    "cobblemon:shedinja",
+    "cobblemon:shelgon",
+    "cobblemon:shellder",
+    "cobblemon:shellos",
+    "cobblemon:shelmet",
+    "cobblemon:shieldon",
+    "cobblemon:shiftry",
+    "cobblemon:shiinotic",
+    "cobblemon:shinx",
+    "cobblemon:shroodle",
+    "cobblemon:shroomish",
+    "cobblemon:shuckle",
+    "cobblemon:shuppet",
+    "cobblemon:sigilyph",
+    "cobblemon:silcoon",
+    "cobblemon:silicobra",
+    "cobblemon:silvally",
+    "cobblemon:simipour",
+    "cobblemon:simisage",
+    "cobblemon:simisear",
+    "cobblemon:sinistcha",
+    "cobblemon:sinistea",
+    "cobblemon:sirfetchd",
+    "cobblemon:sizzlipede",
+    "cobblemon:skarmory",
+    "cobblemon:skeledirge",
+    "cobblemon:skiddo",
+    "cobblemon:skiploom",
+    "cobblemon:skitty",
+    "cobblemon:skorupi",
+    "cobblemon:skrelp",
+    "cobblemon:skuntank",
+    "cobblemon:skwovet",
+    "cobblemon:slaking",
+    "cobblemon:slakoth",
+    "cobblemon:sliggoo",
+    "cobblemon:slitherwing",
+    "cobblemon:slowbro",
+    "cobblemon:slowking",
+    "cobblemon:slowpoke",
+    "cobblemon:slugma",
+    "cobblemon:slurpuff",
+    "cobblemon:smeargle",
+    "cobblemon:smoliv",
+    "cobblemon:smoochum",
+    "cobblemon:sneasel",
+    "cobblemon:sneasler",
+    "cobblemon:snivy",
+    "cobblemon:snom",
+    "cobblemon:snorlax",
+    "cobblemon:snorunt",
+    "cobblemon:snover",
+    "cobblemon:snubbull",
+    "cobblemon:sobble",
+    "cobblemon:solgaleo",
+    "cobblemon:solosis",
+    "cobblemon:solrock",
+    "cobblemon:spearow",
+    "cobblemon:spectrier",
+    "cobblemon:spewpa",
+    "cobblemon:spheal",
+    "cobblemon:spidops",
+    "cobblemon:spinarak",
+    "cobblemon:spinda",
+    "cobblemon:spiritomb",
+    "cobblemon:spoink",
+    "cobblemon:sprigatito",
+    "cobblemon:spritzee",
+    "cobblemon:squawkabilly",
+    "cobblemon:squirtle",
+    "cobblemon:stakataka",
+    "cobblemon:stantler",
+    "cobblemon:staraptor",
+    "cobblemon:staravia",
+    "cobblemon:starly",
+    "cobblemon:starmie",
+    "cobblemon:staryu",
+    "cobblemon:steelix",
+    "cobblemon:steenee",
+    "cobblemon:stonjourner",
+    "cobblemon:stoutland",
+    "cobblemon:stufful",
+    "cobblemon:stunfisk",
+    "cobblemon:stunky",
+    "cobblemon:sudowoodo",
+    "cobblemon:suicune",
+    "cobblemon:sunflora",
+    "cobblemon:sunkern",
+    "cobblemon:surskit",
+    "cobblemon:swablu",
+    "cobblemon:swadloon",
+    "cobblemon:swalot",
+    "cobblemon:swampert",
+    "cobblemon:swanna",
+    "cobblemon:swellow",
+    "cobblemon:swinub",
+    "cobblemon:swirlix",
+    "cobblemon:swoobat",
+    "cobblemon:sylveon",
+    "cobblemon:tadbulb",
+    "cobblemon:taillow",
+    "cobblemon:talonflame",
+    "cobblemon:tandemaus",
+    "cobblemon:tangela",
+    "cobblemon:tangrowth",
+    "cobblemon:tapubulu",
+    "cobblemon:tapufini",
+    "cobblemon:tapukoko",
+    "cobblemon:tapulele",
+    "cobblemon:tarountula",
+    "cobblemon:tatsugiri",
+    "cobblemon:tauros",
+    "cobblemon:teddiursa",
+    "cobblemon:tentacool",
+    "cobblemon:tentacruel",
+    "cobblemon:tepig",
+    "cobblemon:terapagos",
+    "cobblemon:terrakion",
+    "cobblemon:thievul",
+    "cobblemon:throh",
+    "cobblemon:thundurus",
+    "cobblemon:thwackey",
+    "cobblemon:timburr",
+    "cobblemon:tinglu",
+    "cobblemon:tinkatink",
+    "cobblemon:tinkaton",
+    "cobblemon:tinkatuff",
+    "cobblemon:tirtouga",
+    "cobblemon:toedscool",
+    "cobblemon:toedscruel",
+    "cobblemon:togedemaru",
+    "cobblemon:togekiss",
+    "cobblemon:togepi",
+    "cobblemon:togetic",
+    "cobblemon:torchic",
+    "cobblemon:torkoal",
+    "cobblemon:tornadus",
+    "cobblemon:torracat",
+    "cobblemon:torterra",
+    "cobblemon:totodile",
+    "cobblemon:toucannon",
+    "cobblemon:toxapex",
+    "cobblemon:toxel",
+    "cobblemon:toxicroak",
+    "cobblemon:toxtricity",
+    "cobblemon:tranquill",
+    "cobblemon:trapinch",
+    "cobblemon:treecko",
+    "cobblemon:trevenant",
+    "cobblemon:tropius",
+    "cobblemon:trubbish",
+    "cobblemon:trumbeak",
+    "cobblemon:tsareena",
+    "cobblemon:turtonator",
+    "cobblemon:turtwig",
+    "cobblemon:tympole",
+    "cobblemon:tynamo",
+    "cobblemon:typenull",
+    "cobblemon:typhlosion",
+    "cobblemon:tyranitar",
+    "cobblemon:tyrantrum",
+    "cobblemon:tyrogue",
+    "cobblemon:tyrunt",
+    "cobblemon:umbreon",
+    "cobblemon:unfezant",
+    "cobblemon:unown",
+    "cobblemon:ursaluna",
+    "cobblemon:ursaring",
+    "cobblemon:urshifu",
+    "cobblemon:uxie",
+    "cobblemon:vanillish",
+    "cobblemon:vanillite",
+    "cobblemon:vanilluxe",
+    "cobblemon:vaporeon",
+    "cobblemon:varoom",
+    "cobblemon:veluza",
+    "cobblemon:venipede",
+    "cobblemon:venomoth",
+    "cobblemon:venonat",
+    "cobblemon:venusaur",
+    "cobblemon:vespiquen",
+    "cobblemon:vibrava",
+    "cobblemon:victini",
+    "cobblemon:victreebel",
+    "cobblemon:vigoroth",
+    "cobblemon:vikavolt",
+    "cobblemon:vileplume",
+    "cobblemon:virizion",
+    "cobblemon:vivillon",
+    "cobblemon:volbeat",
+    "cobblemon:volcanion",
+    "cobblemon:volcarona",
+    "cobblemon:voltorb",
+    "cobblemon:vullaby",
+    "cobblemon:vulpix",
+    "cobblemon:wailmer",
+    "cobblemon:wailord",
+    "cobblemon:walkingwake",
+    "cobblemon:walrein",
+    "cobblemon:wartortle",
+    "cobblemon:watchog",
+    "cobblemon:wattrel",
+    "cobblemon:weavile",
+    "cobblemon:weedle",
+    "cobblemon:weepinbell",
+    "cobblemon:weezing",
+    "cobblemon:whimsicott",
+    "cobblemon:whirlipede",
+    "cobblemon:whiscash",
+    "cobblemon:whismur",
+    "cobblemon:wigglytuff",
+    "cobblemon:wiglett",
+    "cobblemon:wimpod",
+    "cobblemon:wingull",
+    "cobblemon:wishiwashi",
+    "cobblemon:wobbuffet",
+    "cobblemon:wochien",
+    "cobblemon:woobat",
+    "cobblemon:wooloo",
+    "cobblemon:wooper",
+    "cobblemon:wormadam",
+    "cobblemon:wugtrio",
+    "cobblemon:wurmple",
+    "cobblemon:wynaut",
+    "cobblemon:wyrdeer",
+    "cobblemon:xatu",
+    "cobblemon:xerneas",
+    "cobblemon:xurkitree",
+    "cobblemon:yamask",
+    "cobblemon:yamper",
+    "cobblemon:yanma",
+    "cobblemon:yanmega",
+    "cobblemon:yungoos",
+    "cobblemon:yveltal",
+    "cobblemon:zacian",
+    "cobblemon:zamazenta",
+    "cobblemon:zangoose",
+    "cobblemon:zapdos",
+    "cobblemon:zarude",
+    "cobblemon:zebstrika",
+    "cobblemon:zekrom",
+    "cobblemon:zeraora",
+    "cobblemon:zigzagoon",
+    "cobblemon:zoroark",
+    "cobblemon:zorua",
+    "cobblemon:zubat",
+    "cobblemon:zweilous",
+    "cobblemon:zygarde"
+  ],
+  "customSpeciesObserved": [
+    "cobblemon:bambolt",
+    "cobblemon:claspar",
+    "cobblemon:flarow",
+    "cobblemon:ironlamp",
+    "cobblemon:lumin",
+    "cobblemon:pyroclasp",
+    "cobblemon:seraphang",
+    "cobblemon:skarletch"
+  ],
+  "conflicts": []
+}

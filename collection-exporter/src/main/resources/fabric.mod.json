@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "collection-exporter",
+  "version": "${version}",
+  "name": "Collection Exporter",
+  "description": "Client-only, read-only exporter for readable Cobblemon PC collection reports. Works without PC Plus.",
+  "authors": ["buddy"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.cobbletown.collectionexporter.CollectionExporterClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "fabric-api": ">=0.116.7+1.21.1",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "cobblemon": ">=1.8.2"
+  }
+}
